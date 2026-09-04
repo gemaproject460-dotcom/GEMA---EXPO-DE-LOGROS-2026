@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título de la pestaña -->
+    <title>GEMA - Global Emergency Management Access</title>
+
+    <!-- Enlace al archivo de estilos CSS externo -->
+    <link rel="stylesheet" href="urbanas.css">
+
+    <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- LOGO -->
+            <div class="logo-box">
+
+                <img src="Imagenes/LOGO.png" alt="logo">
+
+                <div class="logo-texto">
+                    <h1>GEMA</h1>
+                    <p>GLOBAL EMERGENCY <br> MANAGEMENT ACCESS</p>
+                </div>
+
+            </div>
+
+            <!-- NAVBAR -->
+            <nav class="navbar">
+
+                <a href="index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+
+                <!-- DROPDOWN -->
+                <div class="dropdown">
+
+                    <button class="dropbtn" id="gemas">
+                        <span data-i18n="gemas">Gemas</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-content">
+                        <div class="texto-dropdown">
+                            <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+                            <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+                            <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+                            <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="donaciones.html" data-i18n="donaciones">Donaciones</a>
+
+                <a href="k9.html" data-i18n="k9">K-9</a>
+
+                <!-- FUNCIONES DE ICONOS DEL NAV -->
+                <div class="icons">
+
+                    <!-- Traducción -->
+                    <div class="dropdown">
+
+                        <i class="fa-solid fa-globe"></i>
+
+                        <div class="dropdown-menu">
+                            <a href="#" onclick="cambiarIdioma('es')">🇵🇦 Español</a>
+                            <a href="#" onclick="cambiarIdioma('en')">🇺🇸 English</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Notificaciones -->
+                    <a href="monitoreo.html" class="bell-link">
+                        <i class="fa-regular fa-bell"></i>
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- =======================================
+        HERO
+        ======================================= -->
+
+        <section class="hero-natural">
+
+            <div class="hero-natural-texto">
+
+                <h1>
+                    <i class="fa-solid fa-city"></i>
+                    <span data-i18n="heroUrbanas">EMERGENCIAS URBANAS</span>
+                </h1>
+
+                <p data-i18n="heroUrbanasTexto">
+                    Conoce cómo actuar ante incendios, explosiones, accidentes,
+                    fugas de gas y productos químicos.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- =======================================
+        TARJETAS - CARRUSEL
+        ======================================= -->
+
+        <section class="cards-natural">
+
+            <div class="carrusel-container">
+
+                <div class="carrusel-track" id="carruselTrack">
+
+                    <!-- Incendios -->
+                    <div class="natural-card">
+                        <div class="icono">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h2 data-i18n="incendios">Incendios</h2>
+                        <p data-i18n="incendiosTexto">
+                            Aprende cómo evacuar y protegerte durante un incendio.
+                        </p>
+                        <a href="#incendios" class="btn-natural" data-i18n="verInformacion">
+                            Ver información
+                        </a>
+                    </div>
+
+                    <!-- Explosiones -->
+                    <div class="natural-card">
+                        <div class="icono">
+                            <i class="fa-solid fa-burst"></i>
+                        </div>
+                        <h2 data-i18n="explosiones">Explosiones</h2>
+                        <p data-i18n="explosionesTexto">
+                            Medidas de seguridad antes y después de una explosión.
+                        </p>
+                        <a href="#explosiones" class="btn-natural" data-i18n="verInformacion">
+                            Ver información
+                        </a>
+                    </div>
+
+                    <!-- Accidentes -->
+                    <div class="natural-card">
+                        <div class="icono">
+                            <i class="fa-solid fa-car-burst"></i>
+                        </div>
+                        <h2 data-i18n="accidentes">Accidentes</h2>
+                        <p data-i18n="accidentesTexto">
+                            Qué hacer si presencias un accidente de tránsito.
+                        </p>
+                        <a href="#accidentes" class="btn-natural" data-i18n="verInformacion">
+                            Ver información
+                        </a>
+                    </div>
+
+                    <!-- Fuga de Gas -->
+                    <div class="natural-card">
+                        <div class="icono">
+                            <i class="fa-solid fa-gas-pump"></i>
+                        </div>
+                        <h2 data-i18n="gas">Fugas de Gas</h2>
+                        <p data-i18n="gasTexto">
+                            Cómo actuar ante una fuga de gas doméstico.
+                        </p>
+                        <a href="#gas" class="btn-natural" data-i18n="verInformacion">
+                            Ver información
+                        </a>
+                    </div>
+
+                    <!-- Productos Químicos -->
+                    <div class="natural-card">
+                        <div class="icono">
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div>
+                        <h2 data-i18n="quimicos">Productos Químicos</h2>
+                        <p data-i18n="quimicosTexto">
+                            Medidas de protección frente a sustancias peligrosas.
+                        </p>
+                        <a href="#quimicos" class="btn-natural" data-i18n="verInformacion">
+                            Ver información
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =======================================
+        INFORMACIÓN
+        ======================================= -->
+
+        <section class="informacion-natural">
+
+            <!-- ================================= -->
+            <!-- INCENDIOS -->
+            <!-- ================================= -->
+
+            <div class="info-box" id="incendios">
+
+                <h2><i class="fa-solid fa-fire"></i>
+                    <span data-i18n="incendios">Incendios</span>
+                </h2>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-check"></i>
+                            <span data-i18n="queHacer">¿Qué hacer?</span>
+                        </h3>
+
+                        <ul>
+                            <li data-i18n="inc1">Mantener la calma.</li>
+                            <li data-i18n="inc2">Evacuar por una ruta segura.</li>
+                            <li data-i18n="inc3">Llamar al 103 o al 911.</li>
+                            <li data-i18n="inc4">Gatear si hay mucho humo.</li>
+                            <li data-i18n="inc5">Cubrir nariz y boca con un paño húmedo.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-xmark"></i>
+                            <span data-i18n="queNoHacer">¿Qué NO hacer?</span>
+                        </h3>
+
+                        <ul>
+
+                            <li data-i18n="inc6">No usar elevadores.</li>
+                            <li data-i18n="inc7">No regresar por pertenencias.</li>
+                            <li data-i18n="inc8">No abrir puertas calientes.</li>
+                            <li data-i18n="inc9">No esconderse dentro del edificio.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-lightbulb"></i>
+                            <span data-i18n="prevencion">Prevención</span>
+                        </h3>
+
+                        <ul>
+
+                            <li data-i18n="inc10">Revisar conexiones eléctricas.</li>
+                            <li data-i18n="inc11">Tener detectores de humo.</li>
+                            <li data-i18n="inc12">Contar con extintores.</li>
+                            <li data-i18n="inc13">Conocer rutas de evacuación.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================= -->
+            <!-- EXPLOSIONES -->
+            <!-- ================================= -->
+
+            <div class="info-box" id="explosiones">
+
+                <h2><i class="fa-solid fa-burst"></i>
+                    <span data-i18n="explosiones">Explosiones</span>
+
+                </h2>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-check"></i> <span data-i18n="queHacer">¿Qué hacer?</span></h3>
+
+                        <ul>
+                            <li data-i18n="exp1">Alejarse inmediatamente.</li>
+                            <li data-i18n="exp2">Proteger cabeza y cuello.</li>
+                            <li data-i18n="exp3">Buscar refugio.</li>
+                            <li data-i18n="exp4">Llamar a emergencias.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-xmark"></i> <span data-i18n="queNoHacer">¿Qué NO hacer?</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="exp5">No acercarse para grabar.</li>
+                            <li data-i18n="exp6">No tocar objetos sospechosos.</li>
+                            <li data-i18n="exp7">No bloquear accesos de rescate.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fa-solid fa-lightbulb"></i> <span data-i18n="recomendaciones">Recomendaciones</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="exp8">Identificar salidas de emergencia.</li>
+                            <li data-i18n="exp9">Seguir instrucciones oficiales.</li>
+                            <li data-i18n="exp10">Mantener distancia de edificios dañados.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================= -->
+            <!-- ACCIDENTES -->
+            <!-- ================================= -->
+
+            <div class="info-box" id="accidentes">
+
+                <h2><i class="fa-solid fa-car-burst"></i>
+                    <span data-i18n="accTitulo">Accidentes de Tránsito</span>
+                </h2>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-check"></i> <span data-i18n="queHacer">¿Qué hacer?</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="acc1">Verificar si hay heridos.</li>
+
+                            <li data-i18n="acc2">Llamar al 911.</li>
+
+                            <li data-i18n="acc3">Señalizar el área.</li>
+
+                            <li data-i18n="acc4">Dar primeros auxilios solo si sabes hacerlo.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-xmark"></i> <span data-i18n="queNoHacer">¿Qué NO hacer?</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="acc5">No mover heridos graves.</li>
+
+                            <li data-i18n="acc6">No rodear el accidente.</li>
+
+                            <li data-i18n="acc67">No obstaculizar ambulancias.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-lightbulb"></i> <span data-i18n="prevencion">Prevención</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="acc8">Usar cinturón y casco.</li>
+
+                            <li data-i18n="acc9">Reducir velocidad cuando llueve.</li>
+
+                            <li data-i18n="acc10">Respetar señales de tránsito.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================= -->
+            <!-- FUGAS DE GAS -->
+            <!-- ================================= -->
+
+            <div class="info-box" id="gas">
+
+                <h2><i class="fa-solid fa-gas-pump"></i>
+                    <span data-i18n="gas">Fugas de Gas</span>
+                </h2>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-check"></i> <span data-i18n="queHacer">¿Qué hacer?</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="gas1">Abrir puertas y ventanas.</li>
+
+                            <li data-i18n="gas2">Cerrar la válvula del gas.</li>
+
+                            <li data-i18n="gas3">Evacuar.</li>
+
+                            <li data-i18n="gas4">Llamar al 103 o 911.</li>
+
+                            <li data-i18n="gas5">Respirar lentamente.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-xmark"></i> <span data-i18n="queNoHacer">¿Qué NO hacer?</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="gas6">No encender luces.</li>
+
+                            <li data-i18n="gas7">No usar fósforos.</li>
+
+                            <li data-i18n="gas8">No usar celulares.</li>
+
+                            <li data-i18n="gas9">No reparar la fuga.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-lightbulb"></i> <span data-i18n="prevencion">Prevención</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="gas10">Revisar mangueras.</li>
+
+                            <li data-i18n="gas11">Instalar detectores de gas.</li>
+
+                            <li data-i18n="gas12">Utilizar técnicos certificados.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================= -->
+            <!-- PRODUCTOS QUÍMICOS -->
+            <!-- ================================= -->
+
+            <div class="info-box" id="quimicos">
+
+                <h2><i class="fa-solid fa-flask-vial"></i>
+                    <span data-i18n="quimicos">Productos Químicos</span></h2>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-check"></i> <span data-i18n="queHacer">¿Qué hacer?</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="qui1">Alejarse del área.</li>
+
+                            <li data-i18n="qui2">Ventilar el lugar.</li>
+
+                            <li data-i18n="qui3">Cubrir nariz y boca.</li>
+
+                            <li data-i18n="qui4">Lavar con abundante agua las zonas expuestas.</li>
+
+                            <li data-i18n="qui5">Salir al aire libre.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-circle-xmark"></i> <span data-i18n="queNoHacer">¿Qué NO hacer?</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="qui6">No tocar sustancias desconocidas.</li>
+
+                            <li data-i18n="qui7">No mezclar químicos.</li>
+
+                            <li data-i18n="qui8">No comer cerca del derrame.</li>
+
+                            <li data-i18n="qui9">No inhalar vapores.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="fa-solid fa-lightbulb"></i> <span data-i18n="prevencion">Prevención</span></h3>
+
+                        <ul>
+
+                            <li data-i18n="qui10">Guardar químicos etiquetados.</li>
+
+                            <li data-i18n="qui11">Mantenerlos lejos del calor.</li>
+
+                            <li data-i18n="qui12">No mezclar cloro con otros limpiadores.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="footer">
+
+            <div class="footer-grid">
+
+                <!-- GEMA -->
+                <div class="footer-box">
+
+                    <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+                    <p data-i18n="gemaDescripcion">
+                        Global Emergency Management Access.
+                        Promoviendo la preparación, prevención y respuesta
+                        ante emergencias para toda la comunidad.
+                    </p>
+
+                </div>
+
+                <!-- Enlaces -->
+
+                <div class="footer-box">
+
+                    <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+                    <a href="index.html" data-i18n="inicio">Inicio</a>
+                    <a href="informacion.html" data-i18n="informacion">Información</a>
+                    <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+                    <a href="mapa.html" target="_blank" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+                </div>
+
+                <!-- Contacto -->
+
+                <div class="footer-box">
+
+                    <h3 data-i18n="footerContacto">Contacto</h3>
+
+                    <p>Email: gemaproject460@gmail.com </p>
+                    <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+                    <p data-i18n="panama">Panamá</p>
+
+                </div>
+
+                <!-- Redes -->
+
+                <div class="footer-box">
+
+                    <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+                    <div class="footer-redes">
+
+                        <a href="https://vm.tiktok.com/ZS9B37qb48kRf-WNU1D/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                        <a href="https://youtube.com/@gema_oficial460si=U6U8DBRm6MdWLAPy" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p data-i18n="footerDerechos">
+                    © 2026 GEMA | Global Emergency Management Access.
+                    Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="urbanas.js"></script>
+
+</body>
+</html>

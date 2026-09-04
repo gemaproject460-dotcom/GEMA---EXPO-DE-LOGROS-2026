@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meteored Panamá Widget</title>
+      <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#0f172a;
+      color:white;
+      padding:40px;
+    }
+
+    .weather-container{
+      width:100%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .weather-card{
+      background:#111827;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.35);
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .weather-header{
+      padding:20px 25px;
+      background:linear-gradient(135deg,#0284c7,#0ea5e9);
+    }
+
+    .weather-header h1{
+      font-size:28px;
+      margin-bottom:8px;
+    }
+
+    .weather-header p{
+      opacity:0.9;
+      font-size:14px;
+    }
+
+    .iframe-wrapper{
+      position:relative;
+      width:100%;
+      height:700px;
+      background:#fff;
+    }
+
+    .iframe-wrapper iframe{
+      width:100%;
+      height:100%;
+      border:none;
+    }
+
+    .footer{
+      padding:14px 20px;
+      background:#0b1220;
+      text-align:center;
+      font-size:13px;
+      color:#94a3b8;
+    }
+
+    .footer a{
+      color:#38bdf8;
+      text-decoration:none;
+    }
+
+    .footer a:hover{
+      text-decoration:underline;
+    }
+
+    @media(max-width:768px){
+
+      body{
+        padding:15px;
+      }
+
+      .weather-header h1{
+        font-size:22px;
+      }
+
+      .iframe-wrapper{
+        height:600px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="weather-container">
+
+    <div class="weather-card">
+
+      <div class="weather-header">
+        <h1>Clima en Panamá</h1>
+        <p>Pronóstico meteorológico en tiempo real — Meteored Panamá</p>
+      </div>
+
+      <div class="iframe-wrapper">
+
+        <iframe
+          src="https://www.meteored.com.pa/mapas-meteorologicos/"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+      <div class="footer">
+        Datos meteorológicos proporcionados por
+        <a href="https://www.meteored.com.pa/" target="_blank">
+          Meteored Panamá
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

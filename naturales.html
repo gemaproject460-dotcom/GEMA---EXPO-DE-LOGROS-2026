@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Título de la pestaña -->
+  <title>GEMA - Global Emergency Management Access</title>
+
+  <!-- Enlace al archivo de estilos CSS externo -->
+  <link rel="stylesheet" href="naturales.css">
+
+      <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+      <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- LOGO -->
+            <div class="logo-box">
+
+                <img src="Imagenes/LOGO.png" alt="logo">
+
+                <div class="logo-texto">
+                    <h1>GEMA</h1>
+                    <p>GLOBAL EMERGENCY <br> MANAGEMENT ACCESS</p>
+                </div>
+
+            </div>
+
+           
+        
+   <!-- NAVBAR -->
+<nav class="navbar">
+
+    <a href="index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+    
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+
+        <button class="dropbtn" id="gemas">
+<span data-i18n="gemas">Gemas</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+
+        <div class="dropdown-content">
+            <div class="texto-dropdown"> 
+              <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+              <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+              <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+              <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+
+            </div>
+        </div>
+
+    </div>
+
+<a href="donaciones.html" id="datos-pais" data-i18n="pais">Donaciones</a>
+
+<a href="k9.html" id="K-9" > K-9 </a>
+
+
+    
+<!--FUNCIONES DE ICONOS DEL NAV-->
+<div class="icons">
+
+    <!-- Traducción -->
+    <div class="dropdown">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div class="dropdown-menu">
+         <a href="#" onclick="cambiarIdioma('es')">
+🇵🇦 Español
+</a>
+
+            <a href="#" onclick="cambiarIdioma('en')">
+🇺🇸 English
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- Notificaciones -->
+     <div class="icons"></div>
+
+    <a href="monitoreo.html" class="bell-link">
+    <i class="fa-regular fa-bell"></i>
+</a>
+</a>
+
+</div>
+
+        
+    </nav>
+
+   
+</header>
+
+
+
+<!-- =======================================
+      HERO EMERGENCIAS NATURALES
+======================================= -->
+
+<section class="hero-natural">
+
+    <div class="hero-natural-texto">
+
+        <h1 data-i18n="heroTitulo">
+            <i class="fa-solid fa-leaf"></i>
+            EMERGENCIAS NATURALES
+        </h1>
+
+        <p data-i18n="heroDescripcion">
+            Aprende cómo actuar antes, durante y después de una emergencia.
+            La preparación puede salvar vidas.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================
+      TARJETAS
+======================================= -->
+
+<section class="cards-natural">
+
+    <!-- Inundaciones -->
+
+    <div class="natural-card">
+
+        <div class="icono">
+            <i class="fa-solid fa-cloud-showers-water"></i>
+        </div>
+
+        <h2 data-i18n="inundacionesTitulo">Inundaciones y Tormentas</h2>
+
+        <p data-i18n="inundacionesTexto">
+            Recomendaciones para proteger a tu familia durante fuertes lluvias.
+        </p>
+
+        <a href="#inundaciones" class="btn-natural" data-i18n="verInformacion">
+            Ver información
+        </a>
+
+    </div>
+
+    <!-- Sismos -->
+
+    <div class="natural-card">
+
+    <div class="icono">
+        <i class="fa-solid fa-house-crack"></i>
+    </div>
+
+    <h2 data-i18n="sismosTitulo">
+        Sismos
+    </h2>
+
+    <p data-i18n="sismosTexto">
+        Qué hacer antes, durante y después de un terremoto.
+    </p>
+
+    <a href="#sismos" class="btn-natural" data-i18n="verInformacion">
+        Ver información
+    </a>
+
+</div>
+
+    <!-- Abejas -->
+
+    <div class="natural-card">
+
+    <div class="icono">
+        <i class="fa-solid fa-bug"></i>
+    </div>
+
+    <h2 data-i18n="abejasTitulo">
+        Abejas
+    </h2>
+
+    <p data-i18n="abejasTexto">
+        Aprende cómo reaccionar ante un enjambre de abejas africanizadas.
+    </p>
+
+    <a href="#abejas" class="btn-natural" data-i18n="verInformacion">
+        Ver información
+    </a>
+
+</div>
+    <!-- Derrumbes -->
+
+    <div class="natural-card">
+
+    <div class="icono">
+        <i class="fa-solid fa-mountain"></i>
+    </div>
+
+    <h2 data-i18n="derrumbesTitulo">
+        Derrumbes
+    </h2>
+
+    <p data-i18n="derrumbesTexto">
+        Medidas de prevención durante lluvias y deslizamientos.
+    </p>
+
+    <a href="#derrumbes" class="btn-natural" data-i18n="verInformacion">
+        Ver información
+    </a>
+
+</div>
+
+</section>
+
+
+<!-- =======================================
+      INFORMACIÓN
+======================================= -->
+
+<section class="informacion-natural">
+
+<!-- Inundaciones -->
+
+<div class="info-box" id="inundaciones">
+
+<h2 data-i18n="inundacionesInfoTitulo">
+<i class="fa-solid fa-cloud-showers-water"></i>
+Inundaciones y Tormentas
+</h2>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-circle-check"></i> <span data-i18n="queHacer">Qué hacer</span></h3>
+
+<ul>
+
+<li data-i18n="inundacion1">Proteger la vivienda.</li>
+<li data-i18n="inundacion2">Vigilar zonas con riesgo de deslizamientos.</li>
+<li data-i18n="inundacion3">Tener un plan familiar de emergencia.</li>
+<li data-i18n="inundacion4">Mantener radio, linterna y números de emergencia.</li>
+<li data-i18n="inundacion5">Seguir únicamente la información oficial.</li>
+
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-circle-xmark"></i> <span data-i18n="queNoHacer">Qué NO hacer</span></h3>
+
+<ul>
+
+<li data-i18n="inundacionNo1">No acercarse a playas o rompeolas.</li>
+<li data-i18n="inundacionNo2">No conducir por zonas inundadas.</li>
+<li data-i18n="inundacionNo3">No cruzar ríos o quebradas.</li>
+<li data-i18n="inundacionNo4">No realizar actividades en el mar.</li>
+
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-lightbulb"></i> <span data-i18n="recomendaciones">Recomendaciones</span></h3>
+
+<ul>
+
+<li data-i18n="inundacionRec1">Asegurar techos y objetos sueltos.</li>
+<li data-i18n="inundacionRec2">Identificar rutas de evacuación.</li>
+<li data-i18n="inundacionRec3">Mantenerse informado.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Sismos -->
+
+<div class="info-box" id="sismos">
+
+<h2 data-i18n="sismosInfoTitulo">
+
+<i class="fa-solid fa-house-crack"></i>
+
+Sismos y Terremotos
+
+</h2>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="comoReaccionar">¿Cómo reaccionar?</span></h3>
+
+<ul>
+
+<li data-i18n="sismo1">Mantener la calma.</li>
+<li data-i18n="sismo2">Proteger cabeza y cuello.</li>
+<li data-i18n="sismo3">Alejarse de ventanas.</li>
+<li data-i18n="sismo4">No correr.</li>
+<li data-i18n="sismo5">No usar ascensores.</li>
+
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-list-check"></i> <span data-i18n="sismoQueHacer">Qué hacer</span></h3>
+
+<ul>
+
+<li data-i18n="sismo6">Preparar un plan familiar.</li>
+<li data-i18n="sismo7">Tener mochila de emergencia.</li>
+<li data-i18n="sismo8">Después del sismo, alejarse de edificios dañados.</li>
+<li data-i18n="sismo9">Seguir las indicaciones del SINAPROC.</li>
+
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-lightbulb"></i> <span data-i18n="sismoRecomendaciones">Recomendaciones</span></h3>
+
+<ul>
+
+<li data-i18n="sismo10">Participar en simulacros.</li>
+<li data-i18n="sismo11">Revisar periódicamente los suministros.</li>
+<li data-i18n="sismo12">Mantenerse informado.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Abejas -->
+
+<div class="info-box" id="abejas">
+
+<h2 data-i18n="abejasInfoTitulo">
+
+<i class="fa-solid fa-bug"></i>
+
+Abejas Africanizadas
+
+</h2>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-person-running"></i> <span data-i18n="abejasComo">¿Cómo reaccionar?</span></h3>
+
+<ul>
+
+<li data-i18n="abeja1">Mantener la calma.</li>
+<li data-i18n="abeja2">Alejarse del área.</li>
+<li data-i18n="abeja3">Buscar refugio.</li>
+<li data-i18n="abeja4">Evitar movimientos bruscos.</li>
+
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-phone"></i> <span data-i18n="abejasQueHacer">Qué hacer</span></h3>
+
+<ul>
+
+<li data-i18n="abeja5">Llamar al 103.</li>
+<li data-i18n="abeja6">Alertar a otras personas.</li>
+<li data-i18n="abeja7">Cubrir rostro y cuello.</li>
+<li data-i18n="abeja8">No intentar eliminar el enjambre.</li>
+
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-lightbulb"></i> <span data-i18n="abejasRecomendaciones">Recomendaciones</span></h3>
+
+<ul>
+
+<li data-i18n="abeja9">No lanzar objetos.</li>
+<li data-i18n="abeja10">No hacer ruido.</li>
+<li data-i18n="abeja11">Esperar a los bomberos.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Derrumbes -->
+
+<div class="info-box" id="derrumbes">
+
+<h2 data-i18n="derrumbesInfoTitulo">
+
+<i class="fa-solid fa-mountain"></i>
+
+Derrumbes
+
+</h2>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="derrumbesComo">¿Cómo reaccionar?</span></h3>
+
+<ul>
+
+<li data-i18n="derrumbe1">Mantenerse alerta.</li>
+<li data-i18n="derrumbe2">Escuchar sonidos inusuales.</li>
+<li data-i18n="derrumbe3">Alejarse inmediatamente.</li>
+
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-list-check"></i> <span data-i18n="derrumbesQueHacer">Qué hacer</span></h3>
+
+<ul>
+
+<li data-i18n="derrumbe4">Evacuar inmediatamente.</li>
+<li data-i18n="derrumbe5">Alejarse del deslizamiento.</li>
+<li data-i18n="derrumbe6">Buscar un lugar seguro.</li>
+
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3><i class="fa-solid fa-lightbulb"></i> <span data-i18n="derrumbesRecomendaciones">Recomendaciones</span></h3>
+
+<ul>
+
+<li data-i18n="derrumbe7">No construir en laderas.</li>
+<li data-i18n="derrumbe8">Organizar comités de emergencia.</li>
+<li data-i18n="derrumbe9">Revisar el terreno periódicamente.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- GEMA -->
+        <div class="footer-box">
+
+            <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+            <p data-i18n="gemaDescripcion">
+                Global Emergency Management Access.
+                Promoviendo la preparación, prevención y respuesta
+                ante emergencias para toda la comunidad.
+            </p>
+
+        </div>
+
+        <!-- Enlaces -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+            <a href="Index.html" data-i18n="inicio">Inicio</a>
+            <a href="informacion.html" data-i18n="informacion">Información</a>
+            <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+            <a href="mapa.html" target="_blank" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerContacto">Contacto</h3>
+
+            <p>Email: gemaproject460@gmail.com </p>
+            <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+            <p data-i18n="panama">Panamá</p>
+
+        </div>
+
+        <!-- Redes -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+            <div class="footer-redes">
+
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-i18n="footerDerechos">
+            © 2026 GEMA | Global Emergency Management Access.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+<script src="naturales.js"></script>
+
+</body>
+</html>
+
+
+
+

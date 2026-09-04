@@ -1,0 +1,569 @@
+[
+  {
+    "id": 1,
+    "nombre": "Estación Guabito",
+    "tipo": "bomberos",
+    "provincia": "Bocas del Toro",
+    "direccion": "Guabito, Bocas del Toro",
+    "telefono": "759-7005",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 2,
+    "nombre": "Estación Chiriquí Grande",
+    "tipo": "bomberos",
+    "provincia": "Bocas del Toro",
+    "direccion": "Chiriquí Grande, Bocas del Toro",
+    "telefono": "756-9622",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 3,
+    "nombre": "Estación Almirante (Federico Collins)",
+    "tipo": "bomberos",
+    "provincia": "Bocas del Toro",
+    "direccion": "Almirante, Bocas del Toro",
+    "telefono": "758-3214",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 4,
+    "nombre": "Estación Isla Colón (Fabio Bravo)",
+    "tipo": "bomberos",
+    "provincia": "Bocas del Toro",
+    "direccion": "Calle Primera, Isla Colón",
+    "telefono": "757-9274",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 5,
+    "nombre": "Estación Changuinola (James Sutherland)",
+    "tipo": "bomberos",
+    "provincia": "Bocas del Toro",
+    "direccion": "Ave. 17 de Abril, El Empalme",
+    "telefono": "758-7102",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 6,
+    "nombre": "Estación Divalá",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Al lado de la Infoplaza de Divalá",
+    "telefono": "No tiene",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 7,
+    "nombre": "Estación Santa Marta (José Talente)",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Santa Marta, Bugaba",
+    "telefono": "",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 8,
+    "nombre": "Estación Bugaba (Federico Wald Jr.)",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Calle 1a Este, La Concepción, Bugaba, Chiriquí",
+    "telefono": "770-6212",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 9,
+    "nombre": "Estación Doleguita (Juan Araúz)",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Doleguita, David, Chiriquí",
+    "telefono": "728-3832",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 10,
+    "nombre": "Estación Aeropuerto Enrique Malek (Víctor Méndez)",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Aeropuerto Enrique Malek, David, Chiriquí",
+    "telefono": "721-1169",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 11,
+    "nombre": "Estación David (Juan M. Araúz)",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Ciudad de David, Chiriquí",
+    "telefono": "775-4212",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 12,
+    "nombre": "Estación Las Lomas",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Las Lomas, Chiriquí",
+    "telefono": "728-1981",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 13,
+    "nombre": "Estación Alanje (Eloy Pinto Morales)",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Alanje cabecera, Chiriquí",
+    "telefono": "728-0709",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 14,
+    "nombre": "Estación Boquete",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Boquete, Chiriquí",
+    "telefono": "720-1224",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 15,
+    "nombre": "Estación Dolega (Víctor Miranda)",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Dolega, Chiriquí",
+    "telefono": "728-0146 / 728-0144",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 16,
+    "nombre": "Estación Gualaca (Mayor Hurtado Acosta)",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "Calle 1a Este, Gualaca, Chiriquí",
+    "telefono": "728-1816",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 17,
+    "nombre": "Estación San Félix",
+    "tipo": "bomberos",
+    "provincia": "Chiriquí",
+    "direccion": "San Félix, Chiriquí",
+    "telefono": "728-0834",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 18,
+    "nombre": "Estación Operativa Penonomé",
+    "tipo": "bomberos",
+    "provincia": "Coclé",
+    "direccion": "Aeropuerto de Penonomé, Coclé",
+    "telefono": "906-0026",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 19,
+    "nombre": "Estación El Valle de Antón (José María Tejada)",
+    "tipo": "bomberos",
+    "provincia": "Coclé",
+    "direccion": "Calle La Planta, El Valle de Antón",
+    "telefono": "906-1308",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 20,
+    "nombre": "Estación Antón",
+    "tipo": "bomberos",
+    "provincia": "Coclé",
+    "direccion": "Ave. 7a, Antón",
+    "telefono": "906-1124",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 21,
+    "nombre": "Estación La Pintada (Arturo Castro Verde)",
+    "tipo": "bomberos",
+    "provincia": "Coclé",
+    "direccion": "La Pintada, Coclé",
+    "telefono": "983-0086",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 22,
+    "nombre": "Estación Aguadulce (Juan Borace B.)",
+    "tipo": "bomberos",
+    "provincia": "Coclé",
+    "direccion": "Calle San Juan Bautista, Aguadulce",
+    "telefono": "906-0030",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 23,
+    "nombre": "Estación Natá (Fernando Fernández Quevedo)",
+    "tipo": "bomberos",
+    "provincia": "Coclé",
+    "direccion": "Natá, Coclé",
+    "telefono": "906-1223",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 24,
+    "nombre": "Estación Penonomé (Juan J. Parada)",
+    "tipo": "bomberos",
+    "provincia": "Coclé",
+    "direccion": "Calle Alejandro Posadas, Penonomé",
+    "telefono": "906-1562",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 25,
+    "nombre": "Estación Colón (Luis J. A. Ducret)",
+    "tipo": "bomberos",
+    "provincia": "Colón",
+    "direccion": "Cuartel de Bomberos, Calle 11, Colón, Barrio Sur",
+    "telefono": "475-3030",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 26,
+    "nombre": "Estación Arco Iris (Thomas Butler)",
+    "tipo": "bomberos",
+    "provincia": "Colón",
+    "direccion": "Arco Iris, Colón",
+    "telefono": "475-4613",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 27,
+    "nombre": "Estación Zona Libre (Comandante Felipe Fung Soto)",
+    "tipo": "bomberos",
+    "provincia": "Colón",
+    "direccion": "Zona Libre, Colón",
+    "telefono": "",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 28,
+    "nombre": "Estación Ocú",
+    "tipo": "bomberos",
+    "provincia": "Herrera",
+    "direccion": "Ocú, Herrera",
+    "telefono": "913-0907",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 29,
+    "nombre": "Estación Pesé (Juan B. Guillen)",
+    "tipo": "bomberos",
+    "provincia": "Herrera",
+    "direccion": "Calle José Varela Blanco, Pesé",
+    "telefono": "974-8844",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 30,
+    "nombre": "Estación La Arena (Crispin Pinilla)",
+    "tipo": "bomberos",
+    "provincia": "Herrera",
+    "direccion": "Calle Porfirio Ruiz, La Arena",
+    "telefono": "913-0733",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 31,
+    "nombre": "Estación Chitré (Eustacio Chichaco)",
+    "tipo": "bomberos",
+    "provincia": "Herrera",
+    "direccion": "Calle Melitón Martín, Chitré",
+    "telefono": "913-0819",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 32,
+    "nombre": "Estación Guararé (Bredio Borrero S.)",
+    "tipo": "bomberos",
+    "provincia": "Los Santos",
+    "direccion": "Guararé, Los Santos",
+    "telefono": "994-5401",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 33,
+    "nombre": "Estación Sabana Grande",
+    "tipo": "bomberos",
+    "provincia": "Los Santos",
+    "direccion": "Vía Macaracas, Sábana Grande",
+    "telefono": "995-1771",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 34,
+    "nombre": "Estación Macaracas (Fernando Samaniego)",
+    "tipo": "bomberos",
+    "provincia": "Los Santos",
+    "direccion": "Vía Macaracas",
+    "telefono": "995-5996",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 35,
+    "nombre": "Estación Pedasí",
+    "tipo": "bomberos",
+    "provincia": "Los Santos",
+    "direccion": "Pedasí, Los Santos",
+    "telefono": "926-0705",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 36,
+    "nombre": "Estación Las Tablas (Pablo Ardito Barleta)",
+    "tipo": "bomberos",
+    "provincia": "Los Santos",
+    "direccion": "Ave. Dr. Belisario Porras, Las Tablas",
+    "telefono": "926-0264",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 37,
+    "nombre": "Estación La Villa de Los Santos (Enrique Ureña)",
+    "tipo": "bomberos",
+    "provincia": "Los Santos",
+    "direccion": "Ave. Dr. Belisario Porras, La Villa de Los Santos",
+    "telefono": "926-0514",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 38,
+    "nombre": "Estación Tonosí (Luis A. Sepulveda)",
+    "tipo": "bomberos",
+    "provincia": "Los Santos",
+    "direccion": "Tonosí, Los Santos",
+    "telefono": "995-8554",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 39,
+    "nombre": "Estación Chepo",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Ave. Jorge A. Velásquez, Distrito de Chepo",
+    "telefono": "519-1642",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 40,
+    "nombre": "Estación Calidonia (Ricardo Arango)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Calle 28 y Ave. Cuba, Calidonia",
+    "telefono": "512-6148",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 41,
+    "nombre": "Estación Plaza Amador (Juan Antonio Guizado)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Plaza Amador, Panamá",
+    "telefono": "512-6154",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 42,
+    "nombre": "Estación Carrasquilla (Darío Vallarino)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Vía España, Ciudad de Panamá",
+    "telefono": "512-6161",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 43,
+    "nombre": "Estación Bethania (David Brandón)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Bethania, Ciudad de Panamá",
+    "telefono": "512-6166",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 44,
+    "nombre": "Estación San Miguelito (Florencio Arosemena)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Ave. Domingo Díaz, San Miguelito",
+    "telefono": "512-6183",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 45,
+    "nombre": "Estación Juan Díaz (Federico Boyd)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Ave. José Agustín Arango, Juan Díaz",
+    "telefono": "512-6185",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 46,
+    "nombre": "Estación Alcalde Díaz",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Calle Principal de Alcalde Díaz",
+    "telefono": "524-9796",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 47,
+    "nombre": "Estación Balboa (Segismundo Navarro)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Calle George W. Goethals, Ancón",
+    "telefono": "512-6151",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 48,
+    "nombre": "Estación Pedro Miguel (Luis E. Castillo)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Ave. Omar Torrijos Herrera, Ciudad de Panamá",
+    "telefono": "520-0800",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 49,
+    "nombre": "Estación Gamboa (Leopoldo Mojica)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Gamboa, Panamá",
+    "telefono": "276-6650",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 50,
+    "nombre": "Estación Operaciones Acuáticas",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Isla Flamenco, Panamá",
+    "telefono": "314-1794",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 51,
+    "nombre": "Estación Tocumen (Luis Endara Paniza)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Calle Aeropuerto, Panamá",
+    "telefono": "519-2143",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 52,
+    "nombre": "Estación Clayton (Cristian Arnheiter)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Calle Alberto Tejada, Ciudad del Saber",
+    "telefono": "512-6177",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 53,
+    "nombre": "Estación Taboga (Paul A. Gambotti)",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Isla Taboga, Panamá",
+    "telefono": "520-0476",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 54,
+    "nombre": "Estación Howard",
+    "tipo": "bomberos",
+    "provincia": "Panamá Oeste",
+    "direccion": "Boulevard Panamá Pacífico, Panamá",
+    "telefono": "520-4696",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 55,
+    "nombre": "Estación La Chorrera (Mario Lasso)",
+    "tipo": "bomberos",
+    "provincia": "Panamá Oeste",
+    "direccion": "Calle San Francisco, La Chorrera",
+    "telefono": "509-5390",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 56,
+    "nombre": "Estación Tanara",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Carretera Interamericana, Tanara de Chepo",
+    "telefono": "504-6602",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 57,
+    "nombre": "Estación Cañita de Chepo",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "Río Paja, Cañita, Distrito de Chepo, Panamá",
+    "telefono": "No tiene",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 58,
+    "nombre": "Estación San Miguel",
+    "tipo": "bomberos",
+    "provincia": "Panamá",
+    "direccion": "San Miguel, Isla del Rey",
+    "telefono": "No tiene",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 59,
+    "nombre": "Estación La Palma",
+    "tipo": "bomberos",
+    "provincia": "Darién",
+    "direccion": "La Palma, Darién",
+    "telefono": "299-6141",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 60,
+    "nombre": "Estación La Mesa",
+    "tipo": "bomberos",
+    "provincia": "Veraguas",
+    "direccion": "La Mesa, Veraguas",
+    "telefono": "935-2250",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 61,
+    "nombre": "Estación Las Palmas",
+    "tipo": "bomberos",
+    "provincia": "Veraguas",
+    "direccion": "Las Palmas, Veraguas",
+    "telefono": "504-6727",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 62,
+    "nombre": "Estación Soná (Alberto Martinelli)",
+    "tipo": "bomberos",
+    "provincia": "Veraguas",
+    "direccion": "Ave. Central, Soná",
+    "telefono": "935-0661",
+    "fuente": "Bomberos de Panamá"
+  },
+  {
+    "id": 63,
+    "nombre": "Estación Santiago (Juan R. Brin)",
+    "tipo": "bomberos",
+    "provincia": "Veraguas",
+    "direccion": "Santiago de Veraguas",
+    "telefono": "998-4444",
+    "fuente": "Bomberos de Panamá"
+  }
+]

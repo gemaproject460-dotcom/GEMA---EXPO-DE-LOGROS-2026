@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Monitoreo | GEMA</title>
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- LEAFLET -->
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+        <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">  <!-- Icono de la pestaña -->
+
+
+    <!-- CSS GEMA -->
+
+    <link
+        rel="stylesheet"
+        href="monitoreo.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <span>GEMA</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="monitoreo.html" class="activo">
+            Monitoreo
+        </a>
+
+    </nav>
+
+
+    <div class="header-buttons">
+
+        <button id="idiomaBtn">
+            <i class="fa-solid fa-globe"></i>
+            <span id="idiomaTexto">EN</span>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-contenido">
+
+        <span class="etiqueta">
+            GEMA
+        </span>
+
+        <h1 data-i18n="titulo">
+            Monitoreo
+        </h1>
+
+        <p data-i18n="descripcion">
+
+            Encuentra servicios de emergencia
+            y apoyo disponibles en Panamá.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTENIDO
+===================================================== -->
+
+<main class="contenedor">
+
+
+    <!-- =================================================
+         CATEGORÍAS
+    ================================================== -->
+
+    <section class="categorias">
+
+        <button
+            class="categoria activa"
+            data-tipo="todos"
+        >
+
+            <span><i class="fa-solid fa-location-dot"></i></span>
+
+            <strong data-i18n="todos">
+                Todos
+            </strong>
+
+        </button>
+
+
+        <button
+            class="categoria"
+            data-tipo="hospital"
+        >
+
+            <span><i class="fa-solid fa-hospital"></i></span>
+
+            <strong data-i18n="hospitales">
+                Hospitales
+            </strong>
+
+        </button>
+
+
+        <button
+            class="categoria"
+            data-tipo="bomberos"
+        >
+
+            <span><i class="fa-solid fa-fire-extinguisher"></i></span>
+
+            <strong data-i18n="bomberos">
+                Bomberos
+            </strong>
+
+        </button>
+
+
+        <button
+            class="categoria"
+            data-tipo="policia"
+        >
+
+            <span><i class="fa-solid fa-shield-halved"></i></span>
+
+            <strong data-i18n="policia">
+                Policía
+            </strong>
+
+        </button>
+
+
+        <button
+            class="categoria"
+            data-tipo="ambulancia"
+        >
+
+            <span><i class="fa-solid fa-truck-medical"></i></span>
+
+            <strong data-i18n="ambulancias">
+                Ambulancias
+            </strong>
+
+        </button>
+
+
+        <button
+            class="categoria"
+            data-tipo="albergue"
+        >
+
+            <span><i class="fa-solid fa-house"></i></span>
+
+            <strong data-i18n="albergues">
+                Albergues
+            </strong>
+
+        </button>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FILTROS
+    ================================================== -->
+
+    <section class="filtros">
+
+
+        <div class="buscador">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="Buscar un servicio..."
+                data-i18n-placeholder="buscar"
+            >
+
+        </div>
+
+
+
+        <select id="filtroProvincia">
+
+            <option
+                value="todas"
+                data-i18n="todas_provincias"
+            >
+                Todas las provincias
+            </option>
+
+            <option value="Bocas del Toro">
+                Bocas del Toro
+            </option>
+
+            <option value="Coclé">
+                Coclé
+            </option>
+
+            <option value="Colón">
+                Colón
+            </option>
+
+            <option value="Chiriquí">
+                Chiriquí
+            </option>
+
+            <option value="Darién">
+                Darién
+            </option>
+
+            <option value="Herrera">
+                Herrera
+            </option>
+
+            <option value="Los Santos">
+                Los Santos
+            </option>
+
+            <option value="Panamá">
+                Panamá
+            </option>
+
+            <option value="Panamá Oeste">
+                Panamá Oeste
+            </option>
+
+            <option value="Veraguas">
+                Veraguas
+            </option>
+
+        </select>
+
+
+
+        <select id="filtroTipo">
+
+            <option
+                value="todos"
+                data-i18n="todos_servicios"
+            >
+                Todos los servicios
+            </option>
+
+            <option value="hospital">
+                Hospitales
+            </option>
+
+            <option value="bomberos">
+                Bomberos
+            </option>
+
+            <option value="policia">
+                Policía
+            </option>
+
+            <option value="ambulancia">
+                Ambulancias
+            </option>
+
+            <option value="albergue">
+                Albergues
+            </option>
+
+        </select>
+
+
+
+        <button
+            id="miUbicacion"
+            class="btn-ubicacion"
+        >
+
+            <i class="fa-solid fa-location-crosshairs"></i>
+
+            <span data-i18n="cerca_mi">
+                Cerca de mí
+            </span>
+
+        </button>
+
+    </section>
+
+
+
+    <!-- =================================================
+         MAPA
+    ================================================== -->
+
+    <section class="mapa-section">
+
+        <div class="titulo-mapa">
+
+            <div>
+
+                <h2 data-i18n="mapa_titulo">
+                    Mapa de servicios
+                </h2>
+
+                <p data-i18n="mapa_descripcion">
+                    Ubicaciones de servicios
+                    de emergencia y apoyo.
+                </p>
+
+            </div>
+
+
+            <div class="contador">
+
+                <strong id="contador">
+                    0
+                </strong>
+
+                <span data-i18n="resultados">
+                    servicios
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- AQUÍ APARECE EL MAPA -->
+
+        <div id="mapa"></div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         LISTA
+    ================================================== -->
+
+    <section class="resultados">
+
+        <h2 data-i18n="resultados">
+            Servicios disponibles
+        </h2>
+
+
+        <div id="listaServicios">
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     LEAFLET JS
+===================================================== -->
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+
+<!-- =====================================================
+     GEMA MONITOREO JS
+===================================================== -->
+
+<script src="monitoreo.js"></script>
+
+
+</body>
+
+</html>

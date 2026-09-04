@@ -1,2 +1,2 @@
-# GEMA - EXPO DE LOGROS 2026
-Aquí reposan los ficheros.
+# GEMAFINAL
+Proyecto Final - Expo de Logros 2026

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!--=========================================
+                    META DATOS
+    ==========================================-->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Imagenes/LOGO-removebg.png">
+
+    <title>GEMA Kids</title>
+
+    <!--=========================================
+                    CSS
+    ==========================================-->
+
+    <link rel="stylesheet" href="niños.css">
+
+    <!--=========================================
+                GOOGLE FONTS
+    ==========================================-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--=========================================
+                FONT AWESOME
+    ==========================================-->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<audio id="musicaFondo" loop>
+    <source src="audio/music-kids.mp3" type="audio/mpeg">
+</audio>
+
+<!--=========================================
+                HEADER
+==========================================-->
+
+<header class="header">
+
+    <div class="contenedor">
+
+        <!--======================
+                LOGO
+        =======================-->
+
+        <div class="logo">
+
+            <img src="Imagenes/gema.png" alt="GEMA">
+
+            <div class="texto-logo">
+
+                <h2>GEMA Kids</h2>
+
+                <p data-i18n="aprende_juega_protege">
+                    Aprende • Juega • Protege  
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!--======================
+                MENÚ
+        =======================-->
+
+        <nav class="menu">
+
+            <a href="#hero" data-i18n="inicio">Inicio</a>
+
+
+            <a href="#juegos" data-i18n="juegos">Juegos</a>
+
+            <a href="#aprender" data-i18n="aprender">Aprender</a>
+
+            <a href="#tips" data-i18n="consejos">Consejos</a>
+
+            <a href="#logros" data-i18n="logros">Logros</a>
+
+        </nav>
+
+        <!--======================
+                BOTONES
+        =======================-->
+
+        <div class="acciones">
+
+            <button id="idiomaBtn">
+    <i class="fa-solid fa-language"></i>
+</button>
+             <button id="musicaBtn">
+        <i class="fa-solid fa-volume-high"></i>
+    </button>
+
+</div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!--=========================================
+                HERO
+==========================================-->
+
+<section class="hero" id="hero">
+
+    <!--======================
+            FONDO
+    =======================-->
+
+    <div class="hero-fondo"></div>
+
+    <!-- Nubes -->
+
+    <img src="Imagenes/nube.png" class="nube nube1">
+
+    <img src="Imagenes/nube.png" class="nube nube2">
+
+    <img src="Imagenes/nube.png" class="nube nube3">
+
+    <!-- Estrellas -->
+
+    <img src="Imagenes/estrella.png" class="estrella estrella1">
+
+    <img src="Imagenes/estrella.png" class="estrella estrella2">
+
+    <img src="Imagenes/estrella.png" class="estrella estrella3">
+
+    <!--======================
+            CONTENIDO
+    =======================-->
+
+    <div class="hero-texto">
+
+       <span class="bienvenida" data-i18n="bienvenida">
+    ¡Bienvenido a GEMA Kids!
+</span>
+
+        <h1>
+    <span data-i18n="aprende_jugando">
+        Aprende jugando junto a
+    </span>
+    <span>Sadin</span>
+</h1>
+
+        <p data-i18n="hero_descripcion">
+    Descubre cómo protegerte durante terremotos,
+    volcanes, inundaciones y otros fenómenos
+    naturales mientras juegas y ganas medallas.
+</p>
+
+
+        <div class="hero-botones">
+
+            <a href="#juegos" class="btn-principal" data-i18n="empezar">
+    Empezar a jugar
+</a>
+
+<a href="#aprender" class="btn-secundario" data-i18n="explorar">
+    Explorar
+</a>
+        </div>
+
+        <!--======================
+            PROGRESO
+        =======================-->
+
+        <div class="progreso">
+
+            <div class="titulo-progreso" data-i18n="nivel_1">
+    ⭐ Nivel 1
+</div>
+
+            <div class="barra">
+
+                <span></span>
+
+            </div>
+
+            <small data-i18n="puntos_hero">
+    25 / 100 puntos
+</small>
+
+        </div>
+
+    </div>
+
+    <!--======================
+            SADIN
+    =======================-->
+
+    <div class="hero-imagen">
+
+        <img src="Imagenes/gema.png" alt="Sadin">
+
+       
+
+    </div>
+
+</section>
+
+<!--=========================================
+            JUEGOS
+==========================================-->
+
+<section class="juegos" id="juegos">
+
+    <div class="titulo">
+
+
+    <span data-i18n="zona_juegos">
+        Zona de Juegos
+    </span>
+
+    <h2 data-i18n="elige_aventura">
+        Elige tu aventura
+    </h2>
+
+    <p data-i18n="juegos_descripcion">
+        Completa desafíos, aprende y gana insignias.
+    </p>
+
+</div>
+
+    <div class="contenedor-juegos">
+
+        <!--======================
+                TRIVIA
+        =======================-->
+
+        <article class="card trivia">
+
+            <div class="etiqueta" data-i18n="popular">
+    ⭐ Popular
+</div>
+
+<img src="Imagenes/trivia.png" alt="Trivia">
+
+<h3 data-i18n="trivia">
+    Trivia
+</h3>
+
+<a href="https://gemaproject460-dotcom.github.io/JuegoTriviaGema/" data-i18n="jugar" target="_blank">
+    Jugar
+</a>
+
+        </article>
+
+        <!--======================
+                MEMORIA
+        =======================-->
+
+        <article class="card memoria">
+
+            <div class="etiqueta" data-i18n="nuevo">
+    Nuevo
+</div>
+
+<img src="Imagenes/memoriareal.png" alt="Memoria">
+
+<h3 data-i18n="memoria">
+    Memoria
+</h3>
+
+<a href="https://gemaproject460-dotcom.github.io/Memoria/" data-i18n="jugar" target="_blank">
+    Jugar
+</a>
+
+        </article>
+                <!--======================
+            ROMPECABEZAS
+        =======================-->
+
+        <article class="card puzzle">
+
+            <div class="etiqueta" data-i18n="desafio">
+    Desafío
+</div>
+
+<img src="Imagenes/rompecabezas.png" alt="Rompecabezas">
+
+<h3 data-i18n="rompecabezas">
+    Rompecabezas
+</h3>
+
+<a href="https://gemaproject460-dotcom.github.io/Rompecabezas/" data-i18n="jugar" target="_blank">
+    Jugar
+</a>
+
+        </article>
+
+        <!--======================
+                PAREO
+        =======================-->
+
+        <article class="card pareo">
+
+            <div class="etiqueta" data-i18n="facil">
+    Fácil
+</div>
+
+<img src="Imagenes/pareo.png" alt="Pareo">
+
+<h3 data-i18n="pareo">
+    Pareo
+</h3>
+
+<a href="https://gemaproject460-dotcom.github.io/Juego-de-Pareo/" data-i18n="jugar" target="_blank">
+    Jugar
+
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!--=========================================
+            APRENDE MÁS
+==========================================-->
+
+<section class="aprender" id="aprender">
+
+
+        <div class="titulo">
+
+    <span data-i18n="aprende_explorando">
+        Aprende Explorando
+    </span>
+
+    <h2 data-i18n="descubre_mundo">
+        Descubre el mundo
+    </h2>
+
+</div>
+
+   
+
+    </div>
+
+    <div class="contenedor-aprender">
+
+        <!--======================
+            TERREMOTOS
+        =======================-->
+
+        <article class="info-card">
+
+            <img src="Imagenes/terremotos.png" alt="Terremotos">
+
+            <h3 data-i18n="terremotos">
+    Terremotos
+</h3>
+
+<p data-i18n="terremotos_desc">
+    Aprende qué hacer para protegerte
+    durante un sismo.
+</p>
+ <a class="phenomena-card" href="https://spaceplace.nasa.gov/earthquakes/sp/" target="_blank">
+    Explorar
+</a>
+
+        </article>
+
+        <!--======================
+        FENÓMENO DE LA NIÑA
+        =======================-->
+
+        <article class="info-card">
+
+            <img src="Imagenes/nina.png" alt="Fenómeno de La Niña">
+
+            <h3 data-i18n="nina">
+    La Niña
+</h3>
+
+<p data-i18n="nina_desc">
+    Descubre por qué provoca lluvias
+    intensas e inundaciones.
+</p>
+
+
+    <a class="phenomena-card" href= "https://spaceplace.nasa.gov/la-nina/sp/" target="_blank">
+    Explorar
+</a>
+
+        </article>
+
+        <!--======================
+        FENÓMENO DEL NIÑO
+        =======================-->
+
+        <article class="info-card">
+
+            <img src="Imagenes/nino.png" alt="Fenómeno del Niño">
+
+            <h3 data-i18n="nino">
+    El Niño
+</h3>
+
+<p data-i18n="nino_desc">
+    Aprende cómo afecta el clima
+    y produce sequías.
+</p>
+<a class="phenomena-card" href="https://spaceplace.nasa.gov/el-nino/sp/" target="_blank">
+    Explorar
+</a>
+
+        </article>
+
+        <!--======================
+                VOLCANES
+        =======================-->
+
+        <article class="info-card">
+
+            <img src="Imagenes/volcan.png" alt="Volcanes">
+
+            <h3 data-i18n="volcanes">
+    Volcanes
+</h3>
+
+<p data-i18n="volcanes_desc">
+    Descubre cómo nacen los volcanes
+    y cómo actuar ante una erupción.
+</p>
+
+<a class="phenomena-card" href="https://spaceplace.nasa.gov/volcanoes2/sp/" target="_blank">
+    Explorar
+</a>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!--=========================================
+            CONSEJOS DE SADIN
+==========================================-->
+
+<section class="tips" id="tips">
+
+    <div class="titulo">
+
+    <span data-i18n="consejo_titulo">
+        Consejos
+    </span>
+
+    <h2 data-i18n="sadin_consejo">
+        Sadin tiene un consejo para ti
+    </h2>
+
+</div>
+
+    <div class="slider">
+
+        <button class="anterior">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+        <div class="tip">
+
+            <img src="Imagenes/sadin-tip.png" alt="Sadin">
+
+            <div class="contenido-tip">
+
+                <h3 data-i18n="consejo_dia">
+    🐶 Consejo del día
+</h3>
+
+                <p>
+
+    <span data-i18n="consejo_terremoto">
+        Si ocurre un terremoto,
+        recuerda siempre:
+    </span>
+
+    <br><br>
+
+    <span data-i18n="agachate">
+        ✅ Agáchate.
+    </span>
+
+    <br>
+
+    <span data-i18n="cubrete">
+        ✅ Cúbrete.
+    </span>
+
+    <br>
+
+    <span data-i18n="agarrate">
+        ✅ Agárrate.
+    </span>
+
+</p>
+            </div>
+
+        </div>
+
+        <button class="siguiente">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+</section>
+<!--=========================================
+                LOGROS
+==========================================-->
+
+<section class="logros" id="logros">
+
+    <div class="titulo">
+
+    <span data-i18n="tus_logros">
+        Tus Logros
+    </span>
+
+    <h2 data-i18n="conviertete_heroe">
+        Conviértete en un héroe
+    </h2>
+
+    <p data-i18n="logros_descripcion">
+        Completa juegos para desbloquear
+        nuevas medallas.
+    </p>
+
+</div>
+
+    <div class="contenedor-logros">
+
+        <!-- Medalla -->
+
+        <article class="logro">
+
+            <img src="Imagenes/medalla1.png" alt="">
+<h3 data-i18n="primer_juego">
+    Primer Juego
+</h3>
+
+<p data-i18n="primer_juego_desc">
+    Completa tu primer desafío.
+</p>
+
+        </article>
+
+        <!-- Medalla -->
+
+        <article class="logro">
+
+            <img src="Imagenes/medalla2.png" alt="">
+
+            <h3 data-i18n="experto_trivia">
+    Experto en Trivia
+</h3>
+
+<p data-i18n="experto_trivia_desc">
+    Responde correctamente
+    10 preguntas.
+</p>
+        </article>
+
+        <!-- Medalla -->
+
+        <article class="logro">
+
+            <img src="Imagenes/medalla3.png" alt="">
+
+            <h3 data-i18n="super_memoria">
+    Súper Memoria
+</h3>
+
+<p data-i18n="super_memoria_desc">
+    Encuentra todas las parejas.
+</p>
+
+        </article>
+
+        <!-- Medalla -->
+
+        <article class="logro">
+
+            <img src="Imagenes/medalla4.png" alt="">
+
+            <h3 data-i18n="heroe_gema">
+    Héroe GEMA
+</h3>
+
+<p data-i18n="heroe_gema_desc">
+    Completa todos los juegos.
+</p>
+
+        </article>
+
+    </div>
+
+    <!--======================
+            PROGRESO
+    =======================-->
+
+    <div class="progreso-general">
+
+    <h3 data-i18n="nivel">
+        Nivel 1
+    </h3>
+
+    <div class="barra-general">
+        <div class="relleno"></div>
+    </div>
+
+    <p data-i18n="puntos_logros">
+        ⭐ 250 / 1000 puntos
+    </p>
+
+</div>
+
+</section>
+
+<!--=========================================
+            CTA FINAL
+==========================================-->
+
+<section class="cta">
+
+    <div class="cta-contenido">
+
+        <img src="Imagenes/sadin-final.png" alt="Sadin">
+
+        <div>
+
+            <h2 data-i18n="otra_aventura">
+    ¿Listo para otra aventura?
+</h2>
+
+<p data-i18n="cta_descripcion">
+    Sigue jugando, aprende más y
+    conviértete en un verdadero
+    héroe de las emergencias.
+</p>
+
+<a href="#juegos" data-i18n="jugar_ahora">
+    Jugar Ahora
+</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+                FOOTER
+==========================================-->
+
+<footer>
+
+    <div class="footer-contenedor">
+
+        <!-- Logo -->
+
+        <div class="footer-logo">
+
+           <h2>
+    GEMA Kids
+</h2>
+
+<p data-i18n="aprende_juega_protege">
+    Aprende • Juega • Protege
+</p>
+
+        </div>
+
+        <!-- Navegación -->
+
+<div class="footer-links">
+
+    <h3 data-i18n="explora">
+        Explora
+    </h3>
+
+    <a href="#hero" data-i18n="inicio">
+        Inicio
+    </a>
+
+    <a href="#juegos" data-i18n="juegos">
+        Juegos
+    </a>
+
+    <a href="#aprender" data-i18n="aprender">
+        Aprender
+    </a>
+
+    <a href="#tips" data-i18n="consejos">
+        Consejos
+    </a>
+
+</div>
+
+
+<!-- Juegos -->
+
+<div class="footer-links">
+
+    <h3 data-i18n="juegos">
+        Juegos
+    </h3>
+
+    <a href="trivia.html" data-i18n="trivia">
+        Trivia
+    </a>
+
+    <a href="memoria.html" data-i18n="memoria">
+        Memoria
+    </a>
+
+    <a href="pareo.html" data-i18n="pareo">
+        Pareo
+    </a>
+
+    <a href="rompecabezas.html" data-i18n="rompecabezas">
+        Rompecabezas
+    </a>
+
+</div>
+
+
+<!-- Redes -->
+
+<div class="footer-redes">
+
+    <h3 data-i18n="siguenos">
+        Síguenos
+    </h3>
+
+    <div class="iconos">
+
+         <a href="https://vm.tiktok.com/ZS9B37qb48kRf-WNU1D/" target="_blank">
+     <i class="fa-brands fa-tiktok"></i>
+ </a>
+ <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+     <i class="fab fa-instagram"></i>
+ </a>
+ <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
+ </a>
+ <a href="https://youtube.com/@gema_oficial460si=U6U8DBRm6MdWLAPy" target="_blank">
+     <i class="fa-brands fa-youtube"></i>
+ </a>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<div class="copyright" data-i18n="copyright">
+    © 2026 GEMA Kids | Global Emergency Management Access
+</div>
+
+</footer>
+<!--=========================================
+            JAVASCRIPT
+==========================================-->
+
+<script src="niños.js"></script>
+
+</body>
+
+</html>
+
+

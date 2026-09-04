@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Título de la pestaña -->
+  <title>GEMA - Global Emergency Management Access</title>
+
+  <!-- Enlace al archivo de estilos CSS externo -->
+  <link rel="stylesheet" href="prevencion.css">
+
+      <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+      <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- LOGO -->
+            <div class="logo-box">
+
+                <img src="Imagenes/LOGO.png" alt="logo">
+
+                <div class="logo-texto">
+                    <h1>GEMA</h1>
+                    <p>GLOBAL EMERGENCY <br> MANAGEMENT ACCESS</p>
+                </div>
+
+            </div>
+
+           
+        
+   <!-- NAVBAR -->
+<nav class="navbar">
+
+    <a href="index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+    
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+
+        <button class="dropbtn" id="gemas">
+<span data-i18n="gemas">Gemas</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+
+        <div class="dropdown-content">
+            <div class="texto-dropdown"> 
+              <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+              <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+              <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+              <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+
+            </div>
+        </div>
+
+    </div>
+
+<a href="donaciones.html" id="datos-pais" data-i18n="pais">Donaciones</a>
+
+<a href="k9.html" id="K-9" > K-9 </a>
+
+
+    
+<!--FUNCIONES DE ICONOS DEL NAV-->
+<div class="icons">
+
+    <!-- Traducción -->
+    <div class="dropdown">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div class="dropdown-menu">
+         <a href="#" onclick="cambiarIdioma('es')">
+🇵🇦 Español
+</a>
+
+            <a href="#" onclick="cambiarIdioma('en')">
+🇺🇸 English
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- Notificaciones -->
+     <div class="icons"></div>
+
+    <a href="monitoreo.html" class="bell-link">
+    <i class="fa-regular fa-bell"></i>
+</a>
+</a>
+
+</div>
+
+        
+    </nav>
+
+   
+</header>
+
+
+<!-- =======================================
+      HERO
+======================================= -->
+
+<section class="hero-natural">
+
+    <div class="hero-natural-texto">
+
+        <h1>
+            <i class="fa-solid fa-shield-heart"></i>
+            <span data-i18n="heroPrevencion">PREVENCIÓN Y EDUCACIÓN</span>
+        </h1>
+
+        <p data-i18n="heroPrevencionTexto">
+            La mejor emergencia es la que se previene. Aprende primeros auxilios,
+            participa en simulacros y prepara a tu familia.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =======================================
+      TARJETAS
+======================================= -->
+
+<section class="cards-natural">
+
+    <!-- Primeros Auxilios -->
+    <div class="natural-card">
+
+        <div class="icono">
+            <i class="fa-solid fa-kit-medical"></i>
+        </div>
+
+        <h2 data-i18n="primerosAuxilios">Primeros Auxilios</h2>
+
+<p data-i18n="primerosAuxiliosTexto">
+Conoce las acciones básicas para ayudar antes de la llegada de los servicios médicos.
+</p>
+
+<a href="#primeros" class="btn-natural" data-i18n="verInformacion">
+Ver información
+</a>
+
+    </div>
+
+    <!-- Simulacros -->
+    <div class="natural-card">
+
+        <div class="icono">
+            <i class="fa-solid fa-person-running"></i>
+        </div>
+
+       <h2 data-i18n="simulacros">Simulacros</h2>
+
+<p data-i18n="simulacrosTexto">
+Practica cómo actuar durante una evacuación de forma segura.
+</p>
+
+<a href="#simulacros" class="btn-natural" data-i18n="verInformacion">
+Ver información
+</a>
+
+    </div>
+
+    <!-- Preparación Familiar -->
+    <div class="natural-card">
+
+        <div class="icono">
+            <i class="fa-solid fa-house-user"></i>
+        </div>
+
+        <h2 data-i18n="preparacionFamiliar">
+Preparación Familiar
+</h2>
+
+<p data-i18n="preparacionFamiliarTexto">
+Organiza un plan para proteger a tu familia en caso de emergencia.
+</p>
+
+<a href="#familia" class="btn-natural" data-i18n="verInformacion">
+Ver información
+</a>
+
+    </div>
+
+    <!-- Consejos -->
+    <div class="natural-card">
+
+        <div class="icono">
+            <i class="fa-solid fa-lightbulb"></i>
+        </div>
+
+        <h2 data-i18n="consejosTitulo">Consejos</h2>
+
+<p data-i18n="consejosTexto">
+Recomendaciones para estar preparado ante cualquier emergencia.
+</p>
+
+<a href="#consejos" class="btn-natural" data-i18n="verInformacion">
+Ver información
+</a>
+
+    </div>
+
+</section>
+
+<!-- =======================================
+      INFORMACIÓN
+======================================= -->
+
+<section class="informacion-natural">
+
+<!-- Primeros Auxilios -->
+
+<div class="info-box" id="primeros">
+
+<h2>
+    <i class="fa-solid fa-kit-medical"></i>
+     <span data-i18n="primerosAuxilios">Primeros Auxilios</span>
+    </h2>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3 data-i18n="rcp"> Reanimación Cardiopulmonar (RCP)</h3>
+
+<ul>
+<li data-i18n="pulso">Verificar el pulso.</li>
+<li data-i18n="compresiones">Si no hay pulso, iniciar compresiones en el pecho.</li>
+<li data-i18n="ritmo">Mantener un ritmo constante hasta que llegue ayuda médica.</li>
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="atencionBasica"> Atención Básica</h3>
+
+<ul>
+<li><b data-i18n="atragantamiento">Atragantamiento:</b><span data-i18n="atragantamientoTexto"> aplicar la maniobra de Heimlich.</span></li>
+
+<li><b data-i18n="quemaduras">Quemaduras:</b><span data-i18n="quemadurasTexto"> enfriar con abundante agua.</span></li>
+
+<li><b data-i18n="hemorragias">Hemorragias:</b><span data-i18n="hemorragiasTexto"> ejercer presión directa.</span></li>
+
+<li><b data-i18n="desmayos">Desmayos:</b><span data-i18n="desmayosTexto"> colocar en posición lateral de seguridad.</span></li>
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="recomendaciones"> Recomendaciones</h3>
+
+<ul>
+<li data-i18n="capacitacionPA">Capacitarse en primeros auxilios.</li>
+<li data-i18n="botiquin">Tener un botiquín completo.</li>
+<li data-i18n="llamar911">Llamar al 911 ante emergencias.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Simulacros -->
+
+<div class="info-box" id="simulacros">
+
+<h2><i class="fa-solid fa-person-running"></i> <span data-i18n="simulacros">Simulacros</span></h2>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3 data-i18n="comoReaccionar">¿Cómo reaccionar?</h3>
+
+<ul>
+<li data-i18n="calma">Mantener la calma.</li>
+<li data-i18n="escuchar">Escuchar instrucciones.</li>
+<li data-i18n="evacuar">Evacuar ordenadamente.</li>
+<li data-i18n="encuentro">Dirigirse al punto de encuentro.</li>
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="queHacer">¿Qué hacer?</h3>
+
+<ul>
+<li data-i18n="rutas">Conocer las rutas de evacuación.</li>
+<li data-i18n="participar">Participar seriamente.</li>
+<li data-i18n="vulnerables">Ayudar a personas vulnerables.</li>
+<li data-i18n="errores">Evaluar errores al finalizar.</li>
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="recomendaciones">Recomendaciones</h3>
+
+<ul>
+<li data-i18n="simulacrosPeriodicos">Realizar simulacros periódicamente.</li>
+<li data-i18n="salidas">Mantener libres las salidas.</li>
+<li data-i18n="planFamiliar">Tener un plan familiar.</li>
+<li data-i18n="capacitaciones">Participar en capacitaciones.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Preparación Familiar -->
+
+<div class="info-box" id="familia">
+
+<h2><i class="fa-solid fa-house-user"></i>
+    <span data-i18n="preparacionFamiliar">Preparación Familiar</span>
+    </h2>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3 data-i18n="planTitulo">Plan Familiar</h3>
+
+<ul>
+<li data-i18n="puntoEncuentro">Definir un punto de encuentro.</li>
+<li data-i18n="numeros">Tener visibles los números de emergencia.</li>
+<li data-i18n="rutas2">Conocer las rutas de evacuación.</li>
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="mochilaTitulo">Mochila de Emergencia</h3>
+
+<ul>
+<li data-i18n="agua">Agua potable.</li>
+<li data-i18n="alimentos">Alimentos no perecederos.</li>
+<li data-i18n="linterna">Linterna.</li>
+<li data-i18n="radio">Radio.</li>
+<li data-i18n="medicamentos">Medicamentos.</li>
+<li data-i18n="documentos">Documentos importantes.</li>
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="recomendaciones">Recomendaciones</h3>
+
+<ul>
+<li data-i18n="simulacrosFamilia">Realizar simulacros en familia.</li>
+<li data-i18n="actualizarPlan">Actualizar el plan cada seis meses.</li>
+<li data-i18n="integrantes">Involucrar a todos los integrantes del hogar.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Consejos -->
+
+<div class="info-box" id="consejos">
+
+<h2><i class="fa-solid fa-lightbulb"></i>
+    <span data-i18n="consejosEmergencia">Consejos ante Emergencias</span>
+    </h2>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3 data-i18n="antes">Antes</h3>
+
+<ul>
+<li data-i18n="mochilaLista">Tener lista una mochila de emergencia.</li>
+<li data-i18n="rutasEvacuacion">Conocer rutas de evacuación.</li>
+<li data-i18n="guardarNumeros">Guardar números de emergencia.</li>
+<li data-i18n="aguaBotiquin">Mantener agua y botiquín disponibles.</li>
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="durante">Durante</h3>
+
+<ul>
+<li data-i18n="calma2">Mantener la calma.</li>
+<li data-i18n="ayudar">Ayudar a niños y adultos mayores.</li>
+<li data-i18n="oficiales">Seguir instrucciones oficiales.</li>
+<li data-i18n="rumores">No difundir rumores.</li>
+</ul>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="siempre">Siempre recuerda</h3>
+
+<ul>
+<li data-i18n="sinaproc">Informarte por SINAPROC y Bomberos.</li>
+<li data-i18n="participarSimulacros">Participar en simulacros.</li>
+<li data-i18n="salvarVidas">Estar preparado puede salvar vidas.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- GEMA -->
+        <div class="footer-box">
+
+            <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+            <p data-i18n="gemaDescripcion">
+                Global Emergency Management Access.
+                Promoviendo la preparación, prevención y respuesta
+                ante emergencias para toda la comunidad.
+            </p>
+
+        </div>
+
+        <!-- Enlaces -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+            <a href="Index.html" data-i18n="inicio">Inicio</a>
+            <a href="informacion.html" data-i18n="informacion">Información</a>
+            <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+            <a href="mapa.html" target="_blank" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerContacto">Contacto</h3>
+
+            <p>Email: gemaproject460@gmail.com </p>
+            <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+            <p data-i18n="panama">Panamá</p>
+
+        </div>
+
+        <!-- Redes -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+            <div class="footer-redes">
+
+                 <a href="https://vm.tiktok.com/ZS9B37qb48kRf-WNU1D/" target="_blank">
+     <i class="fa-brands fa-tiktok"></i>
+ </a>
+ <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+     <i class="fab fa-instagram"></i>
+ </a>
+ <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
+ </a>
+ <a href="https://youtube.com/@gema_oficial460si=U6U8DBRm6MdWLAPy" target="_blank">
+     <i class="fa-brands fa-youtube"></i>
+ </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-i18n="footerDerechos">
+            © 2026 GEMA | Global Emergency Management Access.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="prevencion.js"></script>
+
+</body>
+</html>
+
+
+
+

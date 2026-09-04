@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMA</title>
+
+    <!-- CONEXIÓN CSS -->
+    <link rel="stylesheet" href="donaciones.css">   <!-- Unir con el css -->
+
+        <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+ <body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+       <header class="header">
+
+    <!-- LOGO -->
+    <div class="logo-box">
+
+        <img src="Imagenes/LOGO.png" alt="logo">
+
+        <div class="logo-texto">
+            <h1>GEMA</h1>
+            <p>
+                GLOBAL EMERGENCY <br>
+                MANAGEMENT ACCESS
+            </p>
+
+
+    
+
+        </div>
+
+    </div>
+
+   <!-- NAVBAR -->
+<nav class="navbar">
+
+    <a href="index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+    
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+
+        <button class="dropbtn" id="gemas">
+<span data-i18n="gemas">Gemas</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+
+        <div class="dropdown-content">
+            <div class="texto-dropdown"> 
+              <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+              <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+              <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+              <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+
+            </div>
+        </div>
+
+    </div>
+
+<a href="donaciones.html" id="datos-pais" data-i18n="pais">Donaciones</a>
+
+<a href="k9.html" id="K-9" > K-9 </a>
+
+
+    
+<!--FUNCIONES DE ICONOS DEL NAV-->
+<div class="icons">
+
+    <!-- Traducción -->
+    <div class="dropdown">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div class="dropdown-menu">
+         <a href="#" onclick="cambiarIdioma('es')">
+🇵🇦 Español
+</a>
+
+            <a href="#" onclick="cambiarIdioma('en')">
+🇺🇸 English
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- Notificaciones -->
+     <div class="icons"></div>
+
+    <a href="monitoreo.html" class="bell-link">
+    <i class="fa-regular fa-bell"></i>
+</a>
+
+</div>
+  
+    </nav>
+
+</header>
+
+<main class="donaciones">
+
+    <h1 data-i18n="donacionesTitulo">
+        Organizaciones que brindan ayuda y aceptan donaciones
+    </h1>
+
+    <p class="descripcion" data-i18n="donacionesDescripcion1">
+        Estas organizaciones trabajan a nivel nacional e internacional para brindar ayuda humanitaria
+        en situaciones de emergencia.
+    </p>
+
+    <p class="descripcion" data-i18n="donacionesDescripcion2">
+        Puedes acceder a su sitio web oficial haciendo clic en el botón de cada organización.
+    </p>
+
+
+    <!-- ==========================
+            TARJETAS
+    =========================== -->
+
+    <section class="cards-container">
+
+
+        <!-- CRUZ ROJA -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <img src="Imagenes/CRUZ ROJA.png" alt="Cruz Roja">
+
+                <h2 data-i18n="cruzRojaTitulo">Cruz Roja</h2>
+
+            </div>
+
+            <p data-i18n="cruzRojaTexto">
+               La Cruz Roja Panameña es una organización humanitaria sin fines de lucro, fundada en 1917 y miembro del Movimiento Internacional de la Cruz Roja y de la Media Luna Roja. Su misión es brindar ayuda imparcial a las personas afectadas por desastres, emergencias y situaciones de vulnerabilidad, sin importar su origen, religión o condición. Además de responder a emergencias, desarrolla programas de primeros auxilios, gestión del riesgo de desastres, donación voluntaria de sangre, apoyo a migrantes y capacitación comunitaria, contribuyendo al bienestar y la protección de la población panameña.  
+            </p>
+
+            <a href="https://cruzroja.org.pa/" target="_blank" class="btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="visitarSitio">Visitar sitio web</span>
+            </a>
+
+        </div>
+
+
+        <!-- MÉDICOS SIN FRONTERAS -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <img src="Imagenes/MEDECINE.png" alt="MSF">
+
+                <h2 data-i18n="msfTitulo">Médicos Sin Fronteras</h2>
+
+            </div>
+
+            <p data-i18n="msfTexto">
+             Médecins Sans Frontières es una organización humanitaria internacional que brinda atención médica de emergencia a personas afectadas por conflictos armados, epidemias, desastres naturales, desnutrición y otras crisis humanitarias. Sus equipos trabajan en decenas de países ofreciendo asistencia médica, medicamentos y ayuda vital a quienes más lo necesitan, sin importar su nacionalidad, religión o condición. Además, la organización impulsa donaciones que permiten responder rápidamente a emergencias y salvar vidas en todo el mundo. 
+            </p>
+
+            <a href="https://www.msf.org" target="_blank" class="btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="visitarSitio">Visitar sitio web</span>
+            </a>
+
+        </div>
+
+
+        <!-- UNICEF -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <img src="Imagenes/UNICEF.png" alt="UNICEF">
+
+                <h2 data-i18n="unicefTitulo">UNICEF</h2>
+
+            </div>
+
+            <p data-i18n="unicefTexto">
+             United Nations Children's Fund es la agencia de las Naciones Unidas dedicada a proteger los derechos y el bienestar de los niños y adolescentes. Trabaja en más de 190 países y territorios, colaborando con gobiernos y organizaciones para brindar educación, salud, nutrición, agua potable y protección infantil, además de responder a emergencias y desastres humanitarios. También impulsa la participación de la sociedad mediante programas de voluntariado, campañas de recaudación de fondos y acciones comunitarias que apoyan a la infancia más vulnerable en todo el mundo. 
+            </p>
+
+            <a href="https://www.unicef.org" target="_blank" class="btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="visitarSitio">Visitar sitio web</span>
+            </a>
+
+        </div>
+
+
+        <!--CFRF -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <img src="Imagenes/CEFRF.png" alt="CEFRF">
+
+                <h2 data-i18n="ochaTitulo">Fondos Humanitarios de las Naciones Unidas</h2>
+
+            </div>
+
+             <p data-i18n="ochaTexto">
+               United Nations Office for the Coordination of Humanitarian Affairs administra los Fondos Humanitarios de las Naciones Unidas, mecanismos de financiación que apoyan la respuesta a crisis y desastres en todo el mundo. Estos fondos proporcionan recursos a organizaciones humanitarias para brindar alimentos, agua potable, refugio, atención médica, educación y otros servicios esenciales a las personas afectadas. Además, ayudan a cubrir necesidades urgentes cuando la financiación es insuficiente y permiten ampliar la asistencia a comunidades de difícil acceso. Las donaciones se destinan directamente a organizaciones que trabajan en la primera línea de las emergencias, contribuyendo a salvar vidas y proteger a las poblaciones más vulnerables. 
+             </p>
+
+            <a href="https://crisisrelief.un.org/en/donate" target="_blank" class="btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="visitarSitio">Visitar sitio web</span>
+            </a>
+
+        </div>
+
+
+        <!-- medialunaroja -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <img src="Imagenes/IFRC.png" alt="Federación Internacional de Sociedades de la Medialuna Roja (IFRC)">
+
+                <h2>Federación Internacional de Sociedades de la Medialuna Roja(IFRC)</h2>
+
+            </div>
+
+            <p    data-i18n="ifrcTexto">
+             la Medialuna Roja (IFRC) es la red humanitaria más grande del mundo. Reúne a 191 Sociedades Nacionales de la Cruz Roja y de la Medialuna Roja que trabajan en más de 190 países y territorios. Su función es coordinar la asistencia humanitaria durante desastres y crisis, fortalecer la preparación de las comunidades y apoyar a las sociedades nacionales para proteger la vida, la salud y la dignidad de las personas más vulnerables. 
+            </p>
+
+            <a href="https://www.ifrc.org/es/involucrese/haga-voluntariado/nuestro-voluntariado" target="_blank" class="btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="visitarSitio">Visitar sitio web</span>
+            </a>
+
+        </div>
+
+
+        <!-- Organización Internacional para las Migraciones (OIM)  -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <img src="Imagenes/OIM.png" alt="OIM">
+
+                <h2  data-i18n="oimTitulo">Organización Internacional para las Migraciones (OIM) </h2>
+
+            </div>
+
+            <p data-i18n="oimTexto">
+             Organización internacional dedicada a promover una migración segura, ordenada y digna, así como a proteger los derechos de las personas migrantes y desplazadas. Trabaja junto con gobiernos y organizaciones humanitarias en más de 170 países, brindando asistencia durante emergencias, conflictos y desastres. Además de proporcionar apoyo humanitario, refugio y protección, desarrolla programas para prevenir la violencia, fortalecer la recuperación de las comunidades y garantizar que las personas más vulnerables reciban atención y acceso a sus derechos fundamentales. 
+            </p>
+
+            <a href="https://donate.iom.int" target="_blank" class="btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="visitarSitio">Visitar sitio web</span>
+            </a>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- GEMA -->
+        <div class="footer-box">
+
+            <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+            <p data-i18n="gemaDescripcion">
+                Global Emergency Management Access.
+                Promoviendo la preparación, prevención y respuesta
+                ante emergencias para toda la comunidad.
+            </p>
+
+        </div>
+
+        <!-- Enlaces -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+            <a href="Index.html" data-i18n="inicio">Inicio</a>
+            <a href="informacion.html" data-i18n="informacion">Información</a>
+            <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+            <a href="mapa.html" target="_blank" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerContacto">Contacto</h3>
+
+            <p>Email: gemaproject460@gmail.com </p>
+            <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+            <p data-i18n="panama">Panamá</p>
+
+        </div>
+
+        <!-- Redes -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+            <div class="footer-redes">
+
+  <a href="https://vm.tiktok.com/ZS9B37qb48kRf-WNU1D/" target="_blank">
+     <i class="fa-brands fa-tiktok"></i>
+ </a>
+ <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+     <i class="fab fa-instagram"></i>
+ </a>
+ <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
+ </a>
+ <a href="https://youtube.com/@gema_oficial460si=U6U8DBRm6MdWLAPy" target="_blank">
+     <i class="fa-brands fa-youtube"></i>
+ </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-i18n="footerDerechos">
+            © 2026 GEMA | Global Emergency Management Access.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="donaciones.js"> </script>
+
+</html>

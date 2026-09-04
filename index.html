@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMA</title>
+
+    <!-- CONEXIÓN CSS -->
+    <link rel="stylesheet" href="index.css">   <!-- Unir con el css -->
+
+    <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">  <!-- Icono de la pestaña -->
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+   
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+ <body>
+
+
+
+    <div id="nav-container"></div>
+
+    <!-- AQUÍ SIGUE TODO TU CONTENIDO DEL INDEX -->
+
+    <section class="hero">
+    
+
+    <!-- Video de fondo -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="Imagenes/videos/videoindex.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <!-- Capa oscura -->
+    <div class="hero-overlay"></div>
+
+    <!-- Contenido del Hero -->
+      <div class="hero-texto">
+            <h2 data-i18n="heroTitulo">      
+                ESTAMOS AQUÍ <br> PARA AYUDAR</h2>
+
+            <p data-i18n="heroTexto">Trabajamos junto a nuestra comunidad
+    para promover, mejorar y mantener
+    una cultura de preparación para desastres.</p>
+   <a href="https://engage.cloud.microsoft/main/org/superate.org/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMTA0NzYyMjY2ODk0MzM2In0" target="_blank"  class="btn">
+    <span data-i18n="conoceMas">CONOCE MÁS</span>
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+    </div>
+
+</section>
+
+
+
+       
+
+        
+        <section class="cards"> 
+            <div class="card">
+                <a href="informacion.html" class="lineabotones">
+                <i class="fa-solid fa-circle-info"></i>
+               <h3 data-i18n="cardInfo">INFORMACIÓN</h3>
+               <p data-i18n="textoInfo">¿Qué es GEMA?</p>
+            
+                </a>
+            </div>
+
+            <div class="card">
+                 <a href="niños.html" target="_blank" class="lineabotones">
+                <i class="fa-solid fa-children"></i>
+                <h3 data-i18n="cardNinos">NIÑOS</h3>
+               <p data-i18n="textoNinos">Información y aprendizaje</p>
+                 </a>
+            </div>
+
+            <div class="card">
+                 <a href="capacitaciones.html" class="lineabotones">
+                <i class="fa-solid fa-graduation-cap"></i>
+              <h3 data-i18n="cardCapacitaciones">CAPACITACIONES</h3>
+              <p data-i18n="textoCapacitaciones">Cursos y simulacros</p>
+            </a>
+            </div>
+
+            <div class="card">
+                <a href="productos.html" class="lineabotones">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3 data-i18n="cardProductos">PRODUCTOS</h3>
+                <p data-i18n="textoProductos">Tienda online</p>
+                </a>
+             </div>
+
+        </section>
+
+    </div>
+
+<!-- Contenedor principal que guarda todas las tarjetas -->
+<div class="emergencia-grid">
+
+    <!-- Tarjeta 1 -->
+    <a href="naturales.html" class="tarjeta-link">
+
+    <div class="emergencia-box verde">
+
+        <h3 data-i18n="emergenciasNaturales">
+            EMERGENCIAS NATURALES
+        </h3>
+
+        <ul>
+            <li data-i18n="inundacion">Inundación</li>
+            <li data-i18n="sismos">Sismos</li>
+            <li data-i18n="abejas">Abejas</li>
+            <li data-i18n="derrumbes">Derrumbes</li>
+            <li data-i18n="terremotos">Terremotos</li>
+        </ul>
+
+    </div>
+
+</a>
+    <!-- Tarjeta 2 -->
+    <a href="urbanas.html" class="tarjeta-link">
+    <div class="emergencia-box rojo">
+        <!-- Título -->
+        <h3 data-i18n="emergenciasUrbanas"  >EMERGENCIAS URBANAS</h3>
+
+        <!-- Lista -->
+        <ul>
+
+            <li data-i18n="incendios">Incendios</li>
+            <li data-i18n="explosiones">Explosiones</li>
+            <li data-i18n="accidentes">Accidentes</li>
+            <li data-i18n="aQuienLlamar">¿A quién llamar?</li>
+            <li data-i18n="fugaGas"> Fuga de gas</li>
+
+        </ul>
+    </div>
+    </a>
+
+    <!-- Tarjeta 3 -->
+
+    <a href="prevencion.html" class="tarjeta-link">
+    <div class="emergencia-box azul">
+
+        <!-- Título -->
+       <h3 data-i18n="prevencion">
+PREVENCIÓN Y EDUCACIÓN
+</h3>
+
+        <!-- Lista -->
+        <ul>
+
+            <li data-i18n="primerosAuxilios" >Primeros auxilios</li>
+            <li data-i18n="simulacros" >Simulacros</li>
+            <li data-i18n="preparacionFamiliar" >Preparación familiar</li>
+            <li data-i18n="consejos" >Consejos</li>
+
+        </ul>
+    </div>
+    </a>
+     
+        <!-- DONAR SANGRE --> 
+        <div class="donar-box">
+    
+            <i class="fa-solid fa-droplet"></i>
+            <h3 data-i18n="donarSangre">
+                ¿DESEAS DONAR SANGRE?
+            </h3>
+
+            <a href="sangre.html" class="btn-donar">
+                <span data-i18n="masInfo">
+                    MÁS INFORMACIÓN
+                </span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MAPA INTERACTIVO -->      
+<section class="mapa-section">
+
+    <!-- MAPA IZQUIERDA -->
+    <div class="mapa-box">
+
+        <iframe
+            src="https://www.google.com/maps?q=Panama&output=embed"
+            width="100%"
+            height="250"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+    <!-- TEXTO DERECHA -->    
+    <div class="mapa-info">
+
+        <h3 data-i18n="mapa">
+            MAPA INTERACTIVO
+        </h3>
+
+        <p data-i18n="mapaTexto">
+            Encuentra hospitales, estaciones de emergencia,
+            refugios temporales y rutas seguras cerca de ti.
+        </p>
+
+        <a href="mapa.html" target="_blank" class="btn-mapa">
+          <span data-i18n="verMapa">
+            VER MAPA
+        </span>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- NÚMEROS DE EMERGENCIA -->        
+<section class="numeros-emergencia">
+
+    <h2 data-i18n="numerosEmergencia">
+NÚMEROS DE EMERGENCIA
+</h2>
+
+<a href="https://sume911.pa/" target="_blank" class="linkbotones"> <!--Elimina la linea que aparece al linkear el botón con el href-->
+    <div class="numeros-grid">    <!--clase de todos los botones de numeros de emergencias-->
+        <div class="numero-card">
+            <i class="fa-solid fa-truck-medical"></i>
+            <h3 data-i18n="ambulancia">
+                AMBULANCIA
+            </h3>
+            <p>911</p>  
+        </div>
+    </a>
+
+        <div class="numero-card">
+            <a href="https://www.bomberos.gob.pa/" target="_blank" class="linkbotones">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <h3 data-i18n="bomberos">
+                BOMBEROS
+            </h3>
+            <p>103</p>
+            </a>               <!--por el "</a>" antes de el "</div>" que cierra el number card-->
+        </div>
+        
+
+        <div class="numero-card">
+            <a href="https://www.policia.gob.pa/" target="_blank" class="linkbotones">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3 data-i18n="policia">
+                POLICÍA
+            </h3>
+            <p>104</p>
+            </a>
+        </div>
+
+        <div class="numero-card">
+            <a href="https://www.sinaproc.gob.pa/" target="_blank" class="linkbotones">
+            <i class="fa-solid fa-house-flood-water"></i>
+            <h3 data-i18n="sinaproc">
+                SINAPROC
+            </h3>
+            <p>520-4426</p>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- GEMA -->
+        <div class="footer-box">
+
+            <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+            <p data-i18n="gemaDescripcion">
+                Global Emergency Management Access.
+                Promoviendo la preparación, prevención y respuesta
+                ante emergencias para toda la comunidad.
+            </p>
+
+        </div>
+
+        <!-- Enlaces -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+            <a href="Index.html" data-i18n="inicio">Inicio</a>
+            <a href="informacion.html" data-i18n="informacion">Información</a>
+            <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+            <a href="mapa.html" target="_blank" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerContacto">Contacto</h3>
+
+            <p>Email: gemaproject460@gmail.com </p>
+            <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+            <p data-i18n="panama">Panamá</p>
+
+        </div>
+
+        <!-- Redes -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+            <div class="footer-redes">
+
+  <a href="https://vm.tiktok.com/ZS9B37qb48kRf-WNU1D/" target="_blank">
+     <i class="fa-brands fa-tiktok"></i>
+ </a>
+ <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+     <i class="fab fa-instagram"></i>
+ </a>
+ <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
+ </a>
+ <a href="https://youtube.com/@gema_oficial460si=U6U8DBRm6MdWLAPy" target="_blank">
+     <i class="fa-brands fa-youtube"></i>
+ </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-i18n="footerDerechos">
+            © 2026 GEMA | Global Emergency Management Access.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+<script src="index.js"></script>
+
+</html>

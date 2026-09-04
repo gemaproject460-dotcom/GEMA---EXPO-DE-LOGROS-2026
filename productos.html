@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title data-i18n="tienda.tituloPagina">
+        Tienda Online | GEMA
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="productos.css">
+
+        <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<!-- =========================
+            HEADER
+========================== -->
+
+<header class="header">
+
+    <div class="logo-box">
+
+        <img src="Imagenes/LOGO.png" alt="logo">
+
+        <div class="logo-texto">
+
+            <h1>GEMA</h1>
+
+            <p>
+                GLOBAL EMERGENCY
+                <br>
+                MANAGEMENT ACCESS
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="navbar">
+
+        <!-- INICIO -->
+
+        <a href="index.html"
+           class="active"
+           data-i18n="inicio">
+
+            Inicio
+
+        </a>
+
+
+        <!-- GEMAS -->
+
+        <div class="dropdown">
+
+            <button
+                class="dropbtn"
+                type="button">
+
+                <span data-i18n="gemas">
+
+                    Gemas
+
+                </span>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </button>
+
+
+            <div class="dropdown-content">
+
+                <div class="texto-dropdown">
+
+                    <a href="informacion.html"
+                       data-i18n="informacion">
+
+                        Información
+
+                    </a>
+
+
+                    <a href="niños.html"
+                       data-i18n="ninos">
+
+                        Niños
+
+                    </a>
+
+
+                    <a href="capacitaciones.html"
+                       data-i18n="capacitaciones">
+
+                        Capacitaciones
+
+                    </a>
+
+
+                    <a href="productos.html"
+                       data-i18n="productos">
+
+                        Productos
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DONACIONES -->
+
+        <a href="donaciones.html"
+           data-i18n="donaciones">
+
+            Donaciones
+
+        </a>
+
+
+        <!-- K9 -->
+
+        <a href="k9.html"
+           data-i18n="k9">
+
+            K-9
+
+        </a>
+
+
+        <!-- ICONOS -->
+
+        <div class="icons">
+
+
+            <!-- IDIOMA -->
+
+            <div class="dropdown">
+
+                <i
+                    class="fa-solid fa-globe"
+                    title="Idioma">
+                </i>
+
+
+                <div class="dropdown-menu">
+
+                    <a
+                        href="#"
+                        onclick="cambiarIdioma('es'); return false;">
+
+                        🇵🇦 Español
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        onclick="cambiarIdioma('en'); return false;">
+
+                        🇺🇸 English
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICACIONES -->
+
+            <a
+                href="monitoreo.html"
+                class="bell-link"
+                aria-label="Monitoreo">
+
+                <i class="fa-regular fa-bell"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- =========================
+        BANNER
+========================== -->
+
+<section class="banner-tienda">
+
+    <div class="logo">
+
+        <img src="Imagenes/mercadocachorro.png"
+            alt="GEMA">
+
+    </div>
+
+    <div class="titulo">
+
+        <h1 data-i18n="tienda.titulo">
+
+            TIENDA ONLINE
+
+        </h1>
+
+        <p data-i18n="tienda.subtitulo">
+
+            Equipos y productos para tu seguridad
+
+        </p>
+
+    </div>
+
+    <div class="servicios">
+
+        <div>
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <span data-i18n="tienda.envios">
+
+                Envíos a todo el país
+
+            </span>
+
+        </div>
+
+        <div>
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <span data-i18n="tienda.pago">
+
+                Pago seguro
+
+            </span>
+
+        </div>
+
+        <div>
+
+            <i class="fa-solid fa-headset"></i>
+
+            <span data-i18n="tienda.soporte">
+
+                Atención especializada
+
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+    PRODUCTOS DESTACADOS
+========================= -->
+
+<section class="destacados">
+
+    <div class="titulo-seccion">
+
+        <h2 data-i18n="tienda.destacados">
+
+            PRODUCTOS DESTACADOS
+
+        </h2>
+
+        <p data-i18n="tienda.destacadosDescripcion">
+    Descubre algunos de los productos más recomendados para
+    estar preparado ante cualquier emergencia.
+</p>
+
+    </div>
+
+    <div class="carrusel-productos">
+
+        <button id="flechaAnterior" class="flecha-carrusel flecha-anterior" type="button" aria-label="Producto anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="carrusel-ventana">
+            <div id="contenedorProductos" class="grid-productos"></div>
+        </div>
+
+        <button id="flechaSiguiente" class="flecha-carrusel flecha-siguiente" type="button" aria-label="Producto siguiente">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+    <div id="indicadoresCarrusel" class="indicadores-carrusel"></div>
+
+</section>
+
+<!-- =========================
+        CATEGORÍAS
+========================== -->
+
+<section class="categorias">
+
+    <h2 data-i18n="tienda.categorias">
+
+        CATEGORÍAS
+
+    </h2>
+
+    <div class="grid-categorias">
+
+        <div class="grid-categorias">
+
+    <!-- Preparación -->
+
+    <article class="categoria">
+
+        <h3 data-i18n="tienda.categorias.preparacion">
+            PREPARACIÓN Y SUPERVIVENCIA
+        </h3>
+
+        <img
+            src="Imagenes/preparacionemergencias.jpg"
+            alt="Preparación">
+
+        <p data-i18n="tienda.categorias.preparacionDescripcion">
+            Kits, mochilas, linternas, radios y más.
+        </p>
+
+        <button
+            class="btnCategoria"
+            data-categoria="preparacion"
+            data-i18n="tienda.verProductos">
+
+            VER PRODUCTOS
+
+        </button>
+
+    </article>
+
+
+    <!-- Primeros Auxilios -->
+
+    <article class="categoria">
+
+        <h3 data-i18n="tienda.categorias.primerosAuxilios">
+            PRIMEROS AUXILIOS Y SALUD
+        </h3>
+
+        <img
+            src="Imagenes/botiquin.jfif"
+            alt="Botiquín">
+
+        <p data-i18n="tienda.categorias.primerosAuxiliosDescripcion">
+            Botiquines, insumos médicos y equipos.
+        </p>
+
+        <button
+            class="btnCategoria"
+            data-categoria="primerosAuxilios"
+            data-i18n="tienda.verProductos">
+
+            VER PRODUCTOS
+
+        </button>
+
+    </article>
+
+
+    <!-- Vehicular -->
+
+    <article class="categoria">
+
+        <h3 data-i18n="tienda.categorias.vehicular">
+            SEGURIDAD VEHICULAR
+        </h3>
+
+        <img
+            src="Imagenes/seguridadvehicular.jpg"
+            alt="Vehicular">
+
+        <p data-i18n="tienda.categorias.vehicularDescripcion">
+            Productos para accidentes, daños mecánicos o emergencias en carretera.
+        </p>
+
+        <button
+            class="btnCategoria"
+            data-categoria="vehicular"
+            data-i18n="tienda.verProductos">
+
+            VER PRODUCTOS
+
+        </button>
+
+    </article>
+
+
+    <!-- Adultos Mayores -->
+
+    <article class="categoria">
+
+        <h3 data-i18n="tienda.categorias.adultos">
+            ADULTOS MAYORES
+        </h3>
+
+        <img
+            src="Imagenes/tiendaimg/5adultosmayores/etetoscopio.png"
+            alt="Adultos">
+
+        <p data-i18n="tienda.categorias.adultosDescripcion">
+            Productos enfocados en seguridad y cuidado.
+        </p>
+
+        <button
+            class="btnCategoria"
+            data-categoria="adultos"
+            data-i18n="tienda.verProductos">
+
+            VER PRODUCTOS
+
+        </button>
+
+    </article>
+
+
+    <!-- Instituciones -->
+
+    <article class="categoria">
+
+        <h3 data-i18n="tienda.categorias.instituciones">
+            EQUIPOS INSTITUCIONALES
+        </h3>
+
+        <img
+            src="Imagenes/tiendaimg/6EquiposInstitucionalesyProfesionales/camillas.png"
+            alt="Instituciones">
+
+        <p data-i18n="tienda.categorias.institucionesDescripcion">
+            Productos dirigidos a cuerpos de emergencia y seguridad.
+        </p>
+
+        <button
+            class="btnCategoria"
+            data-categoria="instituciones"
+            data-i18n="tienda.verProductos">
+
+            VER PRODUCTOS
+
+        </button>
+
+    </article>
+
+
+    <!-- Tecnología -->
+
+    <article class="categoria">
+
+        <h3 data-i18n="tienda.categorias.tecnologia">
+            TECNOLOGÍA Y SEGURIDAD
+        </h3>
+
+        <img
+            src="Imagenes/tiendaimg/4tecnologiayseguridadinteligente/camarareolink.png"
+            alt="Tecnología">
+
+        <p data-i18n="tienda.categorias.tecnologiaDescripcion">
+            Equipos tecnológicos para prevención y monitoreo.
+        </p>
+
+        <button
+            class="btnCategoria"
+            data-categoria="tecnologia"
+            data-i18n="tienda.verProductos">
+
+            VER PRODUCTOS
+
+        </button>
+
+    </article>
+
+
+    <!-- Empresas -->
+
+    <article class="categoria">
+
+        <h3 data-i18n="tienda.categorias.empresas">
+            EMPRESAS Y ESCUELAS
+        </h3>
+
+        <img
+            src="Imagenes/tiendaimg/7EmpresasEscuelasyCentrosEducativos/senalizacionesdeemergencia.png"
+            alt="Empresas">
+
+        <p data-i18n="tienda.categorias.empresasDescripcion">
+            Productos para prevención institucional y planes de evacuación.
+        </p>
+
+        <button
+            class="btnCategoria"
+            data-categoria="empresas"
+            data-i18n="tienda.verProductos">
+
+            VER PRODUCTOS
+
+        </button>
+
+    </article>
+
+</div>
+
+</section>
+
+<!-- =========================
+        FOOTER
+========================= -->
+
+<footer class="footer">
+
+<div class="footer-grid">
+
+<!-- =========================
+        GEMA
+========================= -->
+
+<div class="footer-box">
+
+<h3 data-i18n="gemaTitulo">
+
+GEMA
+
+</h3>
+
+<p data-i18n="gemaDescripcion">
+
+Global Emergency Management Access.
+
+Promoviendo la preparación,
+prevención y respuesta ante
+emergencias para toda la comunidad.
+
+</p>
+
+</div>
+
+<!-- =========================
+        ENLACES
+========================= -->
+
+<div class="footer-box">
+
+<h3 data-i18n="footerEnlaces">
+
+Enlaces
+
+</h3>
+
+<a href="index.html"
+data-i18n="inicio">
+
+Inicio
+
+</a>
+
+<a href="informacion.html"
+data-i18n="informacion">
+
+Información
+
+</a>
+
+<a href="capacitaciones.html"
+data-i18n="capacitaciones">
+
+Capacitaciones
+
+</a>
+
+<a href="mapa.html" target="_blank"
+data-i18n="mapaInteractivo">
+
+Mapa Interactivo
+
+</a>
+
+</div>
+
+<!-- =========================
+        CONTACTO
+============================== -->
+
+<div class="footer-box">
+
+    <h3 data-i18n="footerContacto">
+
+        Contacto
+
+    </h3>
+
+    <p>
+
+        Email: contacto@gema.org
+
+    </p>
+
+    <p data-i18n="telefono">
+
+        Teléfono: +507 6000-0000
+
+    </p>
+
+    <p data-i18n="panama">
+
+        Panamá
+
+    </p>
+
+</div>
+
+<!-- =========================
+        REDES SOCIALES
+========================= -->
+
+<div class="footer-box">
+
+    <h3 data-i18n="footerSiguenos">
+
+        Síguenos
+
+    </h3>
+
+    <div class="footer-redes">
+
+  <a href="https://vm.tiktok.com/ZS9B37qb48kRf-WNU1D/" target="_blank">
+     <i class="fa-brands fa-tiktok"></i>
+ </a>
+ <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+     <i class="fab fa-instagram"></i>
+ </a>
+ <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
+ </a>
+ <a href="https://youtube.com/@gema_oficial460si=U6U8DBRm6MdWLAPy" target="_blank">
+     <i class="fa-brands fa-youtube"></i>
+ </a>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- =========================
+        COPYRIGHT
+========================= -->
+
+<div class="footer-bottom">
+
+    <p data-i18n="footerDerechos">
+
+        © 2026 GEMA | Global Emergency Management Access.
+        Todos los derechos reservados.
+
+    </p>
+
+</div>
+
+</footer>
+
+<!-- ==========================================
+            CARRITO FLOTANTE
+========================================== -->
+
+<div id="carritoIcono" class="carrito-icono">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span id="contadorCarrito" class="contador-carrito">
+
+        0
+
+    </span>
+
+</div>
+
+<!-- ==========================================
+            MODAL PRODUCTOS
+========================================== -->
+
+<div id="modalProductos" class="modal">
+
+    <div class="modal-contenido">
+
+        <!-- Botón cerrar -->
+
+        <button
+            id="cerrarModalProductos"
+            class="cerrar-modal">
+
+            &times;
+
+        </button>
+
+        <h2 id="tituloCategoria" data-i18n="tienda.productos">
+
+    Productos
+
+</h2>
+
+        <div
+            id="listaProductos"
+            class="grid-modal-productos">
+
+            <!--
+                Aquí JavaScript agregará
+                las tarjetas de productos
+            -->
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ==========================================
+            MODAL CARRITO
+========================================== -->
+
+<div id="modalCarrito" class="modal">
+
+    <div class="modal-contenido carrito-contenido">
+
+        <button
+            id="cerrarCarrito"
+            class="cerrar-modal">
+
+            &times;
+
+        </button>
+
+        <h2 data-i18n="tienda.miCarrito">
+
+            Mi carrito
+
+        </h2>
+
+        <div id="productosCarrito">
+
+            <!-- Los productos agregados aparecerán aquí -->
+
+        </div>
+
+        <!-- NUEVO BOTÓN VACIAR CARRITO -->
+        <div class="vaciar-carrito-container">
+            <button id="btnVaciarCarrito" class="btn-vaciar oculto" type="button">
+                <i class="fa-solid fa-trash-can"></i>
+                Vaciar carrito
+            </button>
+        </div>
+
+        <div class="resumen-carrito">
+
+            <h3>
+
+                <span data-i18n="tienda.subtotal">
+                    Subtotal:
+                </span>
+
+                <span id="subtotalCarrito">
+
+                    $0.00
+
+                </span>
+
+            </h3>
+
+            <button
+                id="btnRealizarPedido"
+                class="btn-principal"
+                data-i18n="tienda.realizarPedido">
+
+                Realizar pedido
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+            MODAL PEDIDO
+========================================== -->
+
+<div id="modalPedido" class="modal">
+
+    <div class="modal-contenido formulario-contenido">
+
+        <button
+            id="cerrarPedido"
+            class="cerrar-modal">
+
+            &times;
+
+        </button>
+
+        <h2 data-i18n="tienda.realizarPedido">
+
+    Realizar Pedido
+
+</h2>
+
+        <form id="formPedido">
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Nombre"
+                required>
+
+            <input
+                type="text"
+                id="apellido"
+                placeholder="Apellidos"
+                required>
+
+            <input
+                type="email"
+                id="correo"
+                placeholder="Correo electrónico"
+                required>
+
+            <input
+                type="tel"
+                id="telefono"
+                placeholder="Teléfono"
+                required>
+
+            <select
+                id="provincia"
+                required>
+
+                <option value="">
+                    Seleccione una provincia
+                </option>
+
+                <option>Bocas del Toro</option>
+                <option>Coclé</option>
+                <option>Colón</option>
+                <option>Chiriquí</option>
+                <option>Darién</option>
+                <option>Herrera</option>
+                <option>Los Santos</option>
+                <option>Panamá</option>
+                <option>Panamá Oeste</option>
+                <option>Veraguas</option>
+
+            </select>
+
+            <textarea
+                id="direccion"
+                rows="4"
+                placeholder="Dirección"
+                required></textarea>
+
+            <label class="terminos">
+
+                <input
+                    type="checkbox"
+                    id="acepta"
+                    required>
+
+                Acepto los Términos y Condiciones
+                y la Política de Privacidad.
+
+            </label>
+
+            <button
+                id="btnEnviarPedido"
+                class="btn-principal"
+                disabled>
+
+                Enviar Pedido
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+        MODAL CONFIRMACIÓN
+========================================== -->
+
+<div id="modalConfirmacion" class="modal">
+
+    <div class="modal-contenido confirmacion">
+
+        <button
+            id="cerrarConfirmacion"
+            class="cerrar-modal">
+
+            &times;
+
+        </button>
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h2>
+
+            ¡Pedido enviado!
+
+        </h2>
+
+        <p>
+
+            Gracias por comprar en GEMA.
+
+        </p>
+
+        <div id="resumenPedido">
+
+            <!--
+                JS colocará aquí
+                el resumen del pedido
+            -->
+
+        </div>
+
+        <button
+            id="btnAceptar"
+            class="btn-principal">
+
+            Aceptar
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+        MODAL CONFIRMAR VACIAR CARRITO
+========================================== -->
+
+<div id="modalConfirmarVaciar" class="modal">
+
+    <div class="modal-contenido confirmacion-vaciar">
+
+        <button
+            id="cerrarConfirmarVaciar"
+            class="cerrar-modal">
+
+            &times;
+
+        </button>
+
+        <div class="icono-vaciar">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+
+        <h2>¿Vaciar carrito?</h2>
+
+        <p>
+            Todos los productos serán eliminados.
+            <br>
+            ¿Estás seguro de que quieres continuar?
+        </p>
+
+        <div class="botones-vaciar">
+            <button id="btnCancelarVaciar" class="btn-cancelar">
+                Cancelar
+            </button>
+            <button id="btnConfirmarVaciar" class="btn-confirmar-vaciar">
+                <i class="fa-solid fa-trash-can"></i>
+                Sí, vaciar carrito
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+                SCRIPTS
+========================================== -->
+
+<script src="productosbasic.js"></script>
+
+<script src="tienda2.js"></script>
+
+<script src="carrito.js"></script>
+
+<script src="pedido.js"></script>
+
+<script src="productosidioma.js"></script>
+
+<script src="idiomatienda.js"></script>
+</div>
+
+</body>
+
+</html>

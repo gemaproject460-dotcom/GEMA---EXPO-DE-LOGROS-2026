@@ -1,0 +1,1620 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#e9e9e9;
+    padding:30px;
+     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    width:100%;
+    margin:auto;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+/* HEADER */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#022b68;
+    padding:18px 30px;
+}
+
+/* LOGO */
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-box img{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo-texto h1{
+    color:white;
+    font-size:42px;
+}
+
+.logo-texto p{
+    color:white;
+    font-size:15px;
+    line-height:1.4;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#022b68;
+
+    padding:18px 30px;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#e31c23;
+
+    display:flex;
+    align-items:center;
+
+    gap:30px;
+
+    padding:18px 30px;
+
+    border-radius:10px;
+}
+
+/* LINKS */
+.navbar a{
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+/* HOVER */
+.navbar a:hover{
+    opacity:.8;
+}
+
+/* ACTIVO */
+.active{
+    border-bottom:3px solid rgb(255, 255, 255);
+    padding-bottom:5px;
+}
+
+/* DROPDOWN */
+.dropdown{
+    position:relative;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* BOTÓN */
+.dropbtn{
+    background:none;
+    border:none;
+
+    color:rgb(255, 255, 255);
+
+    font-size:17px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+/* MENÚ */
+.dropdown-content{
+    display:none;
+
+    position:absolute;
+
+    top:100%;   /* PEGA el menú justo debajo */
+    left:0;
+
+    margin-top:0; /* evita espacios */
+
+    background:rgb(0, 17, 112);
+
+    min-width:220px;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    z-index:1000;
+
+}
+
+
+
+
+
+/* LINKS MENÚ */
+.dropdown-content a{
+    display:block;
+    padding:14px 18px;
+    color:white;
+    font-size:15px;
+    text-decoration:none;
+}
+
+/* HOVER MENÚ */
+.dropdown-content a:hover{
+    background:#d6d6d684;
+}
+
+/* MOSTRAR */
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* ICONOS */
+.icons{
+    display:flex;
+    gap:18px;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:rgb(16,4,128);
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    min-width:140px;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:white;
+}
+
+.dropdown-menu a:hover{
+    background:#f0f0f0;
+    color:#002f70;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+
+
+/*==================================================
+=            HERO ALPHA K9 UNIT
+==================================================*/
+
+/* Sección principal del Hero */
+.k9-hero{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+
+    /* Imagen de fondo */
+    background: url("Imagenes/perros.png") center center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* Capa oscura sobre la imagen para mejorar la lectura */
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.45);
+}
+
+
+/* Contenedor del contenido */
+.hero-content{
+
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+
+/*==========================
+=       LOGO
+==========================*/
+
+.hero-logo img{
+
+    width: 240px;
+    max-width: 100%;
+
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,.5));
+
+}
+
+
+/*==========================
+=      TEXTO
+==========================*/
+
+.hero-text{
+
+    color: white;
+
+}
+
+
+.hero-text h1{
+
+    font-size: 60px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.hero-text p{
+
+    font-size: 28px;
+
+    font-style: italic;
+
+    margin-bottom: 35px;
+
+}
+
+
+/*==========================
+=      BOTONES
+==========================*/
+
+.hero-buttons{
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* Estilo general de ambos botones */
+.hero-buttons a{
+
+    text-decoration: none;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .35s;
+
+}
+
+
+/*==========================
+=      BOTON ROJO
+==========================*/
+
+.btn-rojo{
+
+    background: #d7262f;
+
+}
+
+
+/* Hover */
+.btn-rojo:hover{
+
+    background: #b91620;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*==========================
+=      BOTON AZUL
+==========================*/
+
+.btn-azul{
+
+    background: #123a7a;
+
+}
+
+
+/* Hover */
+.btn-azul:hover{
+
+    background: #0d2f63;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*==================================================
+=             RESPONSIVE HERO
+==================================================*/
+
+@media(max-width:992px){
+
+    .k9-hero{
+
+        height: auto;
+
+        padding: 80px 0;
+
+    }
+
+    .hero-content{
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .hero-logo img{
+
+        width: 190px;
+
+    }
+
+    .hero-text h1{
+
+        font-size:42px;
+
+    }
+
+    .hero-text p{
+
+        font-size:22px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+
+@media(max-width:576px){
+
+    .hero-text h1{
+
+        font-size:32px;
+
+    }
+
+    .hero-text p{
+
+        font-size:18px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .hero-buttons a{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+/*==================================================
+=          SECCIÓN MISIÓN Y VISIÓN
+==================================================*/
+
+/* Contenedor principal */
+.mision-vision{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 30px;
+
+    margin: 70px auto;
+
+}
+
+
+/* Tarjetas */
+.card-info{
+
+    background: #fff;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    display: flex;
+
+    gap: 25px;
+
+    align-items: flex-start;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+    transition: .35s;
+
+}
+
+
+/* Efecto al pasar el mouse */
+.card-info:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+/*==========================
+=        ÍCONOS
+==========================*/
+
+.icon{
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+}
+
+
+/* Icono rojo */
+
+.icon.rojo{
+
+    background: rgba(215,38,47,.12);
+
+    color: #d7262f;
+
+}
+
+
+/* Icono azul */
+
+.icon.azul{
+
+    background: rgba(18,58,122,.12);
+
+    color: #123a7a;
+
+}
+
+
+/* Tamaño del icono */
+
+.icon i{
+
+    font-size: 36px;
+
+}
+
+
+/*==========================
+=       CONTENIDO
+==========================*/
+
+.contenido h2{
+
+    color: #123a7a;
+
+    margin-bottom: 15px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+}
+
+
+.contenido p{
+
+    color: #555;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+}
+
+
+/*==================================================
+=             NUESTRA HISTORIA
+==================================================*/
+
+.historia{
+
+    margin: 80px auto;
+
+}
+
+
+/* Título principal */
+
+.titulo{
+
+    text-align: center;
+
+    font-size: 40px;
+
+    color: #123a7a;
+
+    margin-bottom: 50px;
+
+    position: relative;
+
+}
+
+
+/* Línea decorativa */
+
+.titulo::after{
+
+    content: "";
+
+    width: 80px;
+
+    height: 4px;
+
+    background: #d7262f;
+
+    display: block;
+
+    margin: 15px auto;
+
+    border-radius: 20px;
+
+}
+
+
+/* Contenedor */
+
+.historia-grid{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+
+    align-items: center;
+
+}
+
+
+/*==========================
+=        IMAGEN
+==========================*/
+
+.historia-img img{
+
+    width: 100%;
+
+    border-radius: 15px;
+
+    display: block;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+/*==========================
+=        TEXTO
+==========================*/
+
+.historia-texto p{
+
+    color: #444;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+    text-align: justify;
+
+}
+
+
+/*==================================================
+=              RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    /* Misión y Visión */
+
+    .mision-vision{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Historia */
+
+    .historia-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .card-info{
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .icon{
+
+        margin: auto;
+
+    }
+
+    .contenido h2{
+
+        font-size: 26px;
+
+    }
+
+    .titulo{
+
+        font-size: 32px;
+
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .card-info{
+
+        padding: 25px;
+
+    }
+
+    .titulo{
+
+        font-size: 28px;
+
+    }
+
+}
+
+
+/*==================================================
+=            ¿QUÉ OFRECEMOS?
+==================================================*/
+
+/* Contenedor principal de las tarjetas */
+.cards-servicios{
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 30px;
+
+    margin-top: 50px;
+
+}
+
+
+/* Tarjeta */
+.servicio{
+
+    background: #fff;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+    transition: .35s;
+
+}
+
+
+/* Efecto al pasar el mouse */
+.servicio:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 18px 35px rgba(0,0,0,.15);
+
+}
+
+
+/*==========================
+=      ÍCONO
+==========================*/
+
+.servicio-icon{
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: auto;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/* Color rojo */
+
+.servicio-icon.rojo{
+
+    background: rgba(215,38,47,.12);
+
+    color: #d7262f;
+
+}
+
+
+/* Color azul */
+
+.servicio-icon.azul{
+
+    background: rgba(18,58,122,.12);
+
+    color: #123a7a;
+
+}
+
+
+/* Icono */
+
+.servicio-icon i{
+
+    font-size: 34px;
+
+}
+
+
+/*==========================
+=      TÍTULO
+==========================*/
+
+.servicio h3{
+
+    color: #123a7a;
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+
+}
+
+
+/*==========================
+=      TEXTO
+==========================*/
+
+.servicio p{
+
+    color: #555;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+}
+
+
+/*==========================
+=      ENLACE
+==========================*/
+
+.servicio a{
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #123a7a;
+
+    padding: 10px 22px;
+
+    border-radius: 8px;
+
+    transition: .3s;
+
+}
+
+
+.servicio a:hover{
+
+    background: #d7262f;
+
+}
+
+
+
+/*==================================================
+=      INSTITUCIONES DE REFERENCIA
+==================================================*/
+
+.instituciones{
+
+    margin: 90px auto;
+
+}
+
+
+/* Contenedor */
+.instituciones-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+
+}
+
+
+/* Tarjeta */
+.institucion{
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+    transition: .35s;
+
+}
+
+
+/* Hover */
+
+.institucion:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 18px 35px rgba(0,0,0,.15);
+
+}
+
+
+/*==========================
+=      IMAGEN
+==========================*/
+
+.institucion img{
+
+    width: 80%;
+
+    height: 150px;
+
+    display: block;
+
+    margin: 20px auto;
+
+    object-fit: contain;
+}
+
+
+/*==========================
+=      CONTENIDO
+==========================*/
+
+.institucion .contenido{
+
+    padding: 25px;
+
+}
+
+
+/* Nombre */
+
+.institucion h3{
+
+    color: #123a7a;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Subtítulo */
+
+.institucion h4{
+
+    color: #d7262f;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* Texto */
+
+.institucion p{
+
+    color: #555;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Botón */
+
+.institucion a{
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #123a7a;
+
+    padding: 10px 22px;
+
+    border-radius: 8px;
+
+    transition: .3s;
+
+}
+
+
+/* Hover botón */
+
+.institucion a:hover{
+
+    background: #d7262f;
+
+}
+
+
+
+/*==================================================
+=          ANIMACIONES
+==================================================*/
+
+/* Transición suave para todas las tarjetas */
+
+.card-info,
+.servicio,
+.institucion{
+
+    transition: all .35s ease;
+
+}
+
+
+
+/*==================================================
+=             RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    /* Servicios */
+
+    .cards-servicios{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Instituciones */
+
+    .instituciones-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+    .servicio{
+
+        padding:30px;
+
+    }
+
+    .institucion img{
+
+        height:200px;
+
+    }
+
+}
+
+
+
+@media(max-width:576px){
+
+    .servicio h3{
+
+        font-size:22px;
+
+    }
+
+    .institucion h3{
+
+        font-size:22px;
+
+    }
+
+}
+
+
+
+
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+.footer{
+
+    background:#0a2342;
+    color:#fff;
+
+    margin-top:80px;
+
+    padding:60px 8% 20px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:40px;
+
+}
+
+.footer-box h3{
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+    font-size:22px;
+
+}
+
+.footer-box p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+    margin-bottom:10px;
+
+}
+
+.footer-box a{
+
+    display:block;
+
+    color:#d8d8d8;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+     text-decoration:none;
+
+}
+
+.footer-box a:hover{
+
+    color:#4da6ff;
+
+    padding-left:6px;
+
+}
+
+.footer-redes{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+.footer-redes a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#163b69;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:18px;
+
+    transition:.3s;
+
+    text-decoration:none;
+
+}
+
+.footer-redes a:hover{
+
+    background:#0a5ca8;
+
+    transform:translateY(-5px);
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    padding-top:20px;
+
+    color:#cfcfcf;
+
+    font-size:15px;
+
+}
+
+/*==================================================
+                ANIMACIONES
+==================================================*/
+
+.hero h1{
+
+    animation:aparecer .8s ease;
+
+}
+
+.hero p{
+
+    animation:aparecer 1.2s ease;
+
+}
+
+.card{
+
+    animation:subir .8s ease;
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes subir{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+                RESPONSIVE TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+    min-height:300px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.section-title{
+
+    font-size:30px;
+
+}
+
+.category h2{
+
+    font-size:28px;
+
+}
+
+}
+
+/*==================================================
+                RESPONSIVE MÓVIL
+==================================================*/
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:250px;
+
+    padding:40px 20px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.info-box{
+
+    padding:25px;
+
+}
+
+.section-title{
+
+    font-size:26px;
+
+}
+
+.category h2{
+
+    font-size:24px;
+
+}
+
+.card img{
+
+    height:200px;
+
+}
+
+.card-content{
+
+    padding:20px;
+
+}
+
+.card-content h3{
+
+    font-size:20px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer-redes{
+
+    justify-content:center;
+
+}
+
+}
+
+/*==================================================
+            CELULARES PEQUEÑOS
+==================================================*/
+
+@media(max-width:480px){
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.card img{
+
+    height:180px;
+
+}
+
+}
+
+
+
+
+
+/*=========================================
+=          CONTENEDOR GENERAL
+=========================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor centrado */
+.container{
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+/* Espaciado entre secciones */
+section{
+    padding: 70px 0;
+}
+
+
+/*==================================================
+                RESPONSIVE MÓVIL
+==================================================*/
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:250px;
+
+    padding:40px 20px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.info-box{
+
+    padding:25px;
+
+}
+
+.section-title{
+
+    font-size:26px;
+
+}
+
+.category h2{
+
+    font-size:24px;
+
+}
+
+.card img{
+
+    height:200px;
+
+}
+
+.card-content{
+
+    padding:20px;
+
+}
+
+.card-content h3{
+
+    font-size:20px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer-redes{
+
+    justify-content:center;
+
+}
+
+}
+
+/*==================================================
+            CELULARES PEQUEÑOS
+==================================================*/
+
+@media(max-width:480px){
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.card img{
+
+    height:180px;
+
+}
+
+}

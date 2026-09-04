@@ -1,0 +1,964 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+
+    --azul: #123B68;
+    --azul-oscuro: #0A2948;
+    --azul-claro: #1E5A91;
+
+    --dorado: #C9A227;
+    --dorado-claro: #E2C45B;
+
+    --blanco: #FFFFFF;
+    --fondo: #F4F7FA;
+    --gris: #6B7280;
+    --gris-claro: #E5E7EB;
+
+    --verde: #2E8B57;
+
+    --sombra:
+        0 10px 30px rgba(10, 41, 72, 0.10);
+
+    --radio: 18px;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f9fc 0%,
+            #eef3f8 100%
+        );
+
+    color: var(--azul-oscuro);
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.k9-header {
+
+    width: 100%;
+
+    height: 78px;
+
+    background: var(--blanco);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* BOTÓN REGRESAR */
+
+.btn-regresar {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    text-decoration: none;
+
+    color: var(--azul);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-regresar i {
+    font-size: 15px;
+}
+
+.btn-regresar:hover {
+
+    color: var(--dorado);
+
+    transform: translateX(-3px);
+}
+
+
+/* LOGO */
+
+.k9-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 25px;
+
+    letter-spacing: 1px;
+}
+
+.k9-logo span {
+
+    color: var(--azul);
+
+    font-weight: 700;
+}
+
+.k9-logo strong {
+
+    color: var(--dorado);
+
+    font-weight: 700;
+}
+
+
+/* IDIOMA */
+
+.btn-idioma {
+
+    border: 1px solid var(--gris-claro);
+
+    background: var(--blanco);
+
+    color: var(--azul);
+
+    padding: 9px 14px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-idioma:hover {
+
+    background: var(--azul);
+
+    color: var(--blanco);
+
+    border-color: var(--azul);
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.k9-container {
+
+    width: min(1050px, 92%);
+
+    margin: 0 auto;
+
+    padding: 60px 0 80px;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.k9-intro {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+}
+
+.k9-icon {
+
+    width: 72px;
+
+    height: 72px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul),
+            var(--azul-claro)
+        );
+
+    color: var(--blanco);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    box-shadow:
+        0 10px 25px rgba(18, 59, 104, 0.25);
+}
+
+.k9-intro h1 {
+
+    font-size: clamp(28px, 4vw, 42px);
+
+    color: var(--azul-oscuro);
+
+    font-weight: 700;
+
+    margin-bottom: 14px;
+}
+
+.k9-intro h1::after {
+
+    content: "";
+
+    display: block;
+
+    width: 55px;
+
+    height: 3px;
+
+    background: var(--dorado);
+
+    margin: 14px auto 0;
+
+    border-radius: 5px;
+}
+
+.k9-intro p {
+
+    color: var(--gris);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.k9-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+.form-section {
+
+    background: var(--blanco);
+
+    border-radius: var(--radio);
+
+    padding: 32px;
+
+    box-shadow: var(--sombra);
+
+    border: 1px solid rgba(18, 59, 104, 0.05);
+
+    animation: aparecer 0.5s ease;
+}
+
+
+/* =========================================
+   TITULO DE SECCIÓN
+========================================= */
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 28px;
+}
+
+.section-title > i {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 12px;
+
+    background: rgba(18, 59, 104, 0.08);
+
+    color: var(--azul);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+.section-title h2 {
+
+    color: var(--azul-oscuro);
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.section-title p {
+
+    color: var(--gris);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.form-group.full {
+
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.form-group label {
+
+    color: var(--azul-oscuro);
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    border: 1px solid var(--gris-claro);
+
+    background: #FAFBFC;
+
+    border-radius: 10px;
+
+    padding: 13px 14px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    color: var(--azul-oscuro);
+
+    outline: none;
+
+    transition:
+        border 0.25s,
+        box-shadow 0.25s,
+        background 0.25s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: var(--azul);
+
+    background: var(--blanco);
+
+    box-shadow:
+        0 0 0 3px rgba(18, 59, 104, 0.09);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #9CA3AF;
+}
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   PARTICIPACIÓN
+========================================= */
+
+.participation-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+.participation-card {
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.participation-card input {
+
+    position: absolute;
+
+    opacity: 0;
+}
+
+.participation-card > div {
+
+    height: 100%;
+
+    padding: 22px;
+
+    border: 1px solid var(--gris-claro);
+
+    border-radius: 14px;
+
+    background: #FAFBFC;
+
+    transition: 0.3s;
+}
+
+.participation-card i {
+
+    color: var(--azul);
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.participation-card h3 {
+
+    font-size: 14px;
+
+    color: var(--azul-oscuro);
+
+    margin-bottom: 7px;
+}
+
+.participation-card p {
+
+    color: var(--gris);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* HOVER */
+
+.participation-card:hover > div {
+
+    border-color: var(--azul);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(18, 59, 104, 0.08);
+}
+
+
+/* SELECCIONADO */
+
+.participation-card input:checked + div {
+
+    border: 2px solid var(--azul);
+
+    background:
+        rgba(18, 59, 104, 0.04);
+
+    box-shadow:
+        0 8px 20px rgba(18, 59, 104, 0.10);
+}
+
+.participation-card input:checked + div i {
+
+    color: var(--dorado);
+}
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.form-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding-top: 5px;
+}
+
+.btn-enviar {
+
+    border: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul),
+            var(--azul-claro)
+        );
+
+    color: var(--blanco);
+
+    padding: 15px 34px;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    box-shadow:
+        0 10px 22px rgba(18, 59, 104, 0.20);
+
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 14px 28px rgba(18, 59, 104, 0.25);
+}
+
+.btn-enviar:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   MENSAJE DE ÉXITO
+========================================= */
+
+.mensaje-exito {
+
+    background: var(--blanco);
+
+    border-radius: var(--radio);
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    box-shadow: var(--sombra);
+
+    margin-top: 30px;
+
+    animation: aparecer 0.5s ease;
+}
+
+.mensaje-exito i {
+
+    font-size: 55px;
+
+    color: var(--verde);
+
+    margin-bottom: 18px;
+}
+
+.mensaje-exito h2 {
+
+    color: var(--azul-oscuro);
+
+    margin-bottom: 10px;
+}
+
+.mensaje-exito p {
+
+    color: var(--gris);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   ANIMACIÓN
+========================================= */
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .k9-header {
+
+        padding: 0 4%;
+
+        height: 70px;
+    }
+
+    .k9-logo {
+
+        font-size: 21px;
+    }
+
+    .btn-regresar span {
+
+        display: none;
+    }
+
+    .btn-idioma {
+
+        padding: 8px 10px;
+    }
+
+    .k9-container {
+
+        width: 94%;
+
+        padding: 40px 0 60px;
+    }
+
+    .form-section {
+
+        padding: 24px 20px;
+    }
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full {
+
+        grid-column: auto;
+    }
+
+    .participation-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .k9-intro {
+
+        margin-bottom: 30px;
+    }
+
+    .k9-intro p {
+
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .k9-header {
+
+        padding: 0 15px;
+    }
+
+    .k9-logo {
+
+        font-size: 18px;
+    }
+
+    .k9-icon {
+
+        width: 62px;
+
+        height: 62px;
+
+        font-size: 25px;
+    }
+
+    .k9-intro h1 {
+
+        font-size: 27px;
+    }
+
+    .form-section {
+
+        padding: 20px 16px;
+    }
+
+    .section-title {
+
+        gap: 10px;
+    }
+
+    .section-title > i {
+
+        width: 40px;
+
+        height: 40px;
+    }
+
+    .section-title h2 {
+
+        font-size: 16px;
+    }
+
+    .btn-enviar {
+
+        width: 100%;
+
+        padding: 14px;
+    }
+}
+
+/*==================================================
+                RESPONSIVE MÓVIL
+==================================================*/
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:250px;
+
+    padding:40px 20px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.info-box{
+
+    padding:25px;
+
+}
+
+.section-title{
+
+    font-size:26px;
+
+}
+
+.category h2{
+
+    font-size:24px;
+
+}
+
+.card img{
+
+    height:200px;
+
+}
+
+.card-content{
+
+    padding:20px;
+
+}
+
+.card-content h3{
+
+    font-size:20px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer-redes{
+
+    justify-content:center;
+
+}
+
+}
+
+/*==================================================
+            CELULARES PEQUEÑOS
+==================================================*/
+
+@media(max-width:480px){
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.card img{
+
+    height:180px;
+
+}
+
+}

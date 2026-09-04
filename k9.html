@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Título de la pestaña -->
+  <title>GEMA - Global Emergency Management Access</title>
+
+  <!-- Enlace al archivo de estilos CSS externo -->
+  <link rel="stylesheet" href="k9.css">
+
+      <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+      <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- LOGO -->
+            <div class="logo-box">
+
+                <img src="Imagenes/LOGO.png" alt="logo">
+
+                <div class="logo-texto">
+                    <h1>GEMA</h1>
+                    <p>GLOBAL EMERGENCY <br> MANAGEMENT ACCESS</p>
+                </div>
+
+            </div>
+
+           
+        
+   <!-- NAVBAR -->
+<nav class="navbar">
+
+    <a href="index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+    
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+
+        <button class="dropbtn" id="gemas">
+<span data-i18n="gemas">Gemas</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+
+        <div class="dropdown-content">
+            <div class="texto-dropdown"> 
+              <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+              <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+              <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+              <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+
+            </div>
+        </div>
+
+    </div>
+
+<a href="donaciones.html" id="datos-pais" data-i18n="pais">Donaciones</a>
+
+<a href="k9.html" id="K-9" > K-9 </a>
+
+
+    
+<!--FUNCIONES DE ICONOS DEL NAV-->
+<div class="icons">
+
+    <!-- Traducción -->
+    <div class="dropdown">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div class="dropdown-menu">
+         <a href="#" onclick="cambiarIdioma('es')">
+🇵🇦 Español
+</a>
+
+            <a href="#" onclick="cambiarIdioma('en')">
+🇺🇸 English
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- Notificaciones -->
+     <div class="icons"></div>
+
+    <a href="monitoreo.html" class="bell-link">
+    <i class="fa-regular fa-bell"></i>
+</a>
+</a>
+
+</div>
+
+        
+    </nav>
+
+   
+</header>
+    
+
+
+<!-- ================= HERO ================= -->
+<section class="k9-hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+        <div class="hero-logo">
+            <img src="Imagenes/alpha.png" alt="Alpha K9">
+        </div>
+
+        <div class="hero-text">
+            <h1 data-i18n="heroTitulo">ALPHA K9 UNIT</h1>
+
+            <p data-i18n="heroSubtitulo">
+                Ángeles con Huellas de Esperanza
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= MISION VISION ================= -->
+
+<section class="mision-vision container">
+
+    <div class="card-info">
+
+        <div class="icon rojo">
+            <i class="fas fa-bullseye"></i>
+        </div>
+
+        <div class="contenido">
+
+            <h2 data-i18n="misionTitulo">Misión</h2>
+
+            <p data-i18n="misionTexto">
+    Fortalecer la preparación de binomios caninos mediante entrenamientos, capacitaciones y voluntariados comprometidos con la cooperación internacional, brindando esperanza y apoyo ante emergencias, desastres y labores de seguridad.
+</p>
+
+        </div>
+
+    </div>
+
+    <div class="card-info">
+
+        <div class="icon azul">
+            <i class="fas fa-globe"></i>
+        </div>
+
+        <div class="contenido">
+
+            <h2 data-i18n="visionTitulo">Visión</h2>
+
+            <p data-i18n="visionTexto">
+    Ser una comunidad internacional líder en la formación y conexión de binomios caninos, reconocida por inspirar confianza, cooperación y servicio bajo nuestro lema "Ángeles con Huellas de Esperanza".
+</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HISTORIA ================= -->
+
+<section class="historia container" id="historia">
+
+    <h2 class="titulo" data-i18n="historiaTitulo">Nuestra Historia</h2>
+
+    <div class="historia-grid">
+
+        <div class="historia-img">
+            <img src="Imagenes/perro.png" alt="">
+        </div>
+
+        <div class="historia-texto">
+
+            <p data-i18n="historia1">
+    ALPHA K9 UNIT nació como una iniciativa enfocada en fortalecer la preparación y cooperación entre binomios caninos especializados en búsqueda, rescate y apoyo en situaciones de emergencia.
+</p>
+            <p data-i18n="historia2">
+    La organización reúne guías, entrenadores y voluntarios comprometidos con el desarrollo de perros de trabajo altamente capacitados para responder ante desastres, rescates urbanos, estructuras colapsadas y otras operaciones especiales.
+</p>
+
+           <p data-i18n="historia3">
+    Gracias al extraordinario sentido del olfato de los perros, estos equipos pueden localizar personas desaparecidas, colaborar con organismos de rescate y brindar apoyo en diferentes escenarios de emergencia.
+</p>
+
+           <p data-i18n="historia4">
+    Más que una organización, ALPHA K9 UNIT busca crear una red internacional de cooperación donde instituciones, profesionales y voluntarios compartan conocimientos, experiencias y entrenamientos para salvar vidas.
+</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICIOS ================= -->
+
+<section class="servicios container">
+
+    <h2 class="titulo" data-i18n="serviciosTitulo">
+    ¿Qué ofrecemos?
+</h2>
+
+    <div class="cards-servicios">
+
+        <div class="servicio">
+
+            <div class="servicio-icon rojo">
+                <i class="fas fa-paw"></i>
+            </div>
+
+            <h3 data-i18n="entrenamientoTitulo">
+    Entrenamientos Especializados
+</h3>
+            <p data-i18n="entrenamientoTexto">
+    Programas orientados al desarrollo de habilidades en obediencia, búsqueda, rescate y fortalecimiento del vínculo entre guía y perro.
+</p>
+
+            <a href="formk9.html" class="btn" data-i18n="masInformacion">
+    Más información
+</a>
+
+        </div>
+
+        <div class="servicio">
+
+            <div class="servicio-icon azul">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+
+            <h3 data-i18n="capacitacionTitulo">
+    Capacitaciones
+</h3>
+
+           <p data-i18n="capacitacionTexto">
+    Cursos, talleres y seminarios para mejorar los conocimientos sobre manejo canino, primeros auxilios veterinarios y búsqueda.
+</p>
+
+            <a href="formk9.html" class="btn" data-i18n="masInformacion">
+    Más información
+</a>
+
+        </div>
+
+        <div class="servicio">
+
+            <div class="servicio-icon rojo">
+                <i class="fas fa-globe-americas"></i>
+            </div>
+
+            <h3 data-i18n="redTitulo">
+    Red Internacional
+</h3>
+
+            <p data-i18n="redTexto">
+    Espacio donde organizaciones y binomios pueden compartir experiencias, crear alianzas y participar en actividades colaborativas.
+</p>
+
+            <a href="formk9.html" class="btn" data-i18n="masInformacion">
+    Más información
+</a>
+
+        </div>
+
+        <div class="servicio">
+
+            <div class="servicio-icon azul">
+                <i class="fas fa-handshake"></i>
+            </div>
+
+            <h3 data-i18n="voluntariadoTitulo">
+    Voluntariado
+</h3>
+
+           <p data-i18n="voluntariadoTexto">
+    Oportunidades para participar en jornadas comunitarias, simulacros y campañas educativas relacionadas con la gestión del riesgo.
+</p> 
+
+
+<a href="formk9.html" class="btn" data-i18n="masInformacion">
+    Más información
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= INSTITUCIONES ================= -->
+
+<section class="instituciones container">
+
+    <h2 class="titulo" data-i18n="institucionesTitulo">
+    Instituciones de referencia
+</h2>
+
+    <div class="instituciones-grid">
+
+        <!-- Cruz Roja -->
+        <div class="institucion">
+
+            <img src="Imagenes/Cruz Roja.jpg" alt="Cruz Roja">
+
+            <div class="contenido">
+
+                <h3 data-i18n="cruzRoja">
+    Cruz Roja Panamá
+</h3>
+
+                <h4 data-i18n="cruzRojaUnidad">
+    Unidad K-SAR
+</h4>
+
+                <p data-i18n="cruzRojaTexto">
+    Unidad especializada en búsqueda y rescate con perros, comprometida con salvar vidas durante emergencias y desastres.
+</p>
+
+                
+<a href="https://cruzroja.org.pa/cuerpo-k-sar/" target="_blank" class="btn" data-i18n="visitar">
+    Visitar institución
+</a>
+            </div>
+
+        </div>
+
+        <!-- SINAPROC -->
+        <div class="institucion">
+
+            <img src="Imagenes/SINAPROC.png" alt="SINAPROC">
+
+            <div class="contenido">
+
+                <h3 data-i18n="sinaproc">
+                 SINAPROC Panamá
+                </h3>
+
+                <h4 data-i18n="sinaprocUnidad">
+                    Unidad de Búsqueda y Rescate
+                </h4>
+
+                <p data-i18n="sinaprocTexto">
+    Equipo especializado en búsqueda y rescate de personas en estructuras colapsadas y escenarios de emergencia.
+</p>
+
+            
+                <a href="https://www.sinaproc.gob.pa/unidad-canina-de-busqueda-y-rescate/" target="_blank"" class="btn" data-i18n="visitar">
+    Visitar institución
+</a>
+
+            </div>
+
+        </div>
+
+        <!-- Bomberos -->
+        <div class="institucion">
+
+            <img src="Imagenes/BOMBEROS.png" alt="Bomberos">
+
+            <div class="contenido">
+
+                <h3 data-i18n="bomberos">
+                     Bomberos de Panamá
+                    </h3>
+
+                <h4 data-i18n="bomberosUnidad">
+                    Unidad Canina
+                
+            </h4>
+
+
+                <p data-i18n="bomberosTexto">
+    Binomios entrenados para búsqueda de personas y apoyo operativo en incendios, rescates y desastres.
+</p>
+
+                <a href="https://www.bomberos.gob.pa/" target="_blank" class="btn" data-i18n="visitar">
+    Visitar institución
+</a>
+
+
+            </div>
+
+        </div>
+
+        <!-- GLOBAL -->
+        <div class="institucion">
+
+            <img src="Imagenes/PASO FRIME.png" alt="GLOBAL">
+
+            <div class="contenido">
+
+                <h3 data-i18n="global">
+                      GLOBAL
+                    </h3>
+
+                <h4 data-i18n="globalUnidad">
+                    USAR Panamá
+                </h4>
+
+                <p data-i18n="globalTexto">
+    Grupo especializado en búsqueda y rescate urbano (USAR), conformado por personal altamente capacitado para responder ante desastres nacionales e internacionales.
+</p>
+
+                
+            <br>
+                <a href="https://www.mingob.gob.pa/grupo-usar-panama-y-unidad-canina-de-sinaproc-partiran-hacia-turquia/" target="_blank" class="btn" data-i18n="visitar">
+    Visitar institución
+</a>
+
+            </div>
+
+        </div>
+
+        <!-- SAR GLOBAL -->
+        <div class="institucion">
+
+            <img src="Imagenes/GLOBAL.png" alt="SAR GLOBAL">
+
+            <div class="contenido">
+
+                <h3 data-i18n="sarGlobal">
+                    SAR GLOBAL
+                </h3>
+
+                <h4 data-i18n="sarUnidad">
+                    IRO – International Rescue Dog Organisation
+                </h4>
+
+                <p data-i18n="sarTexto">
+    Organización internacional que reúne unidades caninas de búsqueda y rescate, promoviendo la cooperación, capacitación y certificación de equipos K9 en todo el mundo.
+</p>
+
+                
+
+                <a href="https://www.iro-dogs.org/unsere-verantwortung#c31" target="_blank" class="btn" data-i18n="visitar">
+                    Visitar institución
+                </a>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- GEMA -->
+        <div class="footer-box">
+
+            <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+            <p data-i18n="gemaDescripcion">
+                Global Emergency Management Access.
+                Promoviendo la preparación, prevención y respuesta
+                ante emergencias para toda la comunidad.
+            </p>
+
+        </div>
+
+        <!-- Enlaces -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+            <a href="Index.html" data-i18n="inicio">Inicio</a>
+            <a href="informacion.html" data-i18n="informacion">Información</a>
+            <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+            <a href="mapa.html" target="_blank" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerContacto">Contacto</h3>
+
+            <p>Email: gemaproject460@gmail.com </p>
+            <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+            <p data-i18n="panama">Panamá</p>
+
+        </div>
+
+        <!-- Redes -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+            <div class="footer-redes">
+
+  <a href="https://vm.tiktok.com/ZS9B37qb48kRf-WNU1D/" target="_blank">
+     <i class="fa-brands fa-tiktok"></i>
+ </a>
+ <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+     <i class="fab fa-instagram"></i>
+ </a>
+ <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
+ </a>
+ <a href="https://youtube.com/@gema_oficial460si=U6U8DBRm6MdWLAPy" target="_blank">
+     <i class="fa-brands fa-youtube"></i>
+ </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-i18n="footerDerechos">
+            © 2026 GEMA | Global Emergency Management Access.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="k9.js"></script>
+
+</body>
+</html>

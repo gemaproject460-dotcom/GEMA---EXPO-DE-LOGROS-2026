@@ -1,0 +1,457 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#e9e9e9;
+    padding:30px;
+     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    width:100%;
+    margin:auto;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+/* HEADER */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#022b68;
+    padding:18px 30px;
+}
+
+/* LOGO */
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-box img{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo-texto h1{
+    color:white;
+    font-size:42px;
+}
+
+.logo-texto p{
+    color:white;
+    font-size:15px;
+    line-height:1.4;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#022b68;
+
+    padding:18px 30px;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#e31c23;
+
+    display:flex;
+    align-items:center;
+
+    gap:30px;
+
+    padding:18px 30px;
+
+    border-radius:10px;
+}
+
+/* LINKS */
+.navbar a{
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+/* HOVER */
+.navbar a:hover{
+    opacity:.8;
+}
+
+/* ACTIVO */
+.active{
+    border-bottom:3px solid rgb(255, 255, 255);
+    padding-bottom:5px;
+}
+
+/* DROPDOWN */
+.dropdown{
+    position:relative;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* BOTÓN */
+.dropbtn{
+    background:none;
+    border:none;
+
+    color:rgb(255, 255, 255);
+
+    font-size:17px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+/* MENÚ */
+.dropdown-content{
+    display:none;
+
+    position:absolute;
+
+    top:100%;   /* PEGA el menú justo debajo */
+    left:0;
+
+    margin-top:0; /* evita espacios */
+
+    background:rgb(0, 17, 112);
+
+    min-width:220px;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    z-index:1000;
+
+}
+
+
+
+
+
+/* LINKS MENÚ */
+.dropdown-content a{
+    display:block;
+    padding:14px 18px;
+    color:white;
+    font-size:15px;
+    text-decoration:none;
+}
+
+/* HOVER MENÚ */
+.dropdown-content a:hover{
+    background:#d6d6d684;
+}
+
+/* MOSTRAR */
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* ICONOS */
+.icons{
+    display:flex;
+    gap:18px;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:rgb(16,4,128);
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    min-width:140px;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:white;
+}
+
+.dropdown-menu a:hover{
+    background:#f0f0f0;
+    color:#002f70;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+
+
+
+
+
+
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+.footer{
+
+    background:#0a2342;
+    color:#fff;
+
+    margin-top:80px;
+
+    padding:60px 8% 20px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:40px;
+
+}
+
+.footer-box h3{
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+    font-size:22px;
+
+}
+
+.footer-box p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+    margin-bottom:10px;
+
+}
+
+.footer-box a{
+
+    display:block;
+
+    color:#d8d8d8;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-box a:hover{
+
+    color:#4da6ff;
+
+    padding-left:6px;
+
+}
+
+.footer-redes{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+.footer-redes a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#163b69;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.footer-redes a:hover{
+
+    background:#0a5ca8;
+
+    transform:translateY(-5px);
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    padding-top:20px;
+
+    color:#cfcfcf;
+
+    font-size:15px;
+
+}
+
+/*==================================================
+                RESPONSIVE MÓVIL
+==================================================*/
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:250px;
+
+    padding:40px 20px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.info-box{
+
+    padding:25px;
+
+}
+
+.section-title{
+
+    font-size:26px;
+
+}
+
+.category h2{
+
+    font-size:24px;
+
+}
+
+.card img{
+
+    height:200px;
+
+}
+
+.card-content{
+
+    padding:20px;
+
+}
+
+.card-content h3{
+
+    font-size:20px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer-redes{
+
+    justify-content:center;
+
+}
+
+}
+
+/*==================================================
+            CELULARES PEQUEÑOS
+==================================================*/
+
+@media(max-width:480px){
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.card img{
+
+    height:180px;
+
+}
+
+}

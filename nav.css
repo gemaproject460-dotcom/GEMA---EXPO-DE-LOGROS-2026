@@ -1,0 +1,477 @@
+/*==================================================
+                    RESET GENERAL
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin:0;
+    background:#e9e9e9;
+    color:#333;
+}
+
+/*==================================================
+                ANIMACIONES
+==================================================*/
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes subirModal{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+                RESPONSIVE MÓVIL
+==================================================*/
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:250px;
+
+    padding:40px 20px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.info-box{
+
+    padding:25px;
+
+}
+
+.section-title{
+
+    font-size:26px;
+
+}
+
+.category h2{
+
+    font-size:24px;
+
+}
+
+.card img{
+
+    height:200px;
+
+}
+
+.card-content{
+
+    padding:20px;
+
+}
+
+.card-content h3{
+
+    font-size:20px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer-redes{
+
+    justify-content:center;
+
+}
+
+}
+
+/*==================================================
+            CELULARES PEQUEÑOS
+==================================================*/
+
+@media(max-width:480px){
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.card img{
+
+    height:180px;
+
+}
+
+}
+/*==================================================
+                CONTENEDOR PRINCIPAL
+==================================================*/
+
+.contenedor{
+
+    width:100%;
+
+    margin:0;
+
+    background:#fff;
+
+    overflow:hidden;
+
+}
+
+/*==================================================
+                    HEADER
+==================================================*/
+
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#022b68;
+
+    padding:18px 30px;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+/*==================================================
+                    LOGO
+==================================================*/
+
+.logo-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo-box img{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.logo-texto h1{
+
+    color:#fff;
+
+    font-size:42px;
+
+    margin-bottom:5px;
+
+}
+
+.logo-texto p{
+
+    color:#fff;
+
+    font-size:15px;
+
+    line-height:1.4;
+
+}
+
+/*==================================================
+                    NAVBAR
+==================================================*/
+
+.navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    background:#e31c23;
+
+    padding:16px 28px;
+
+    border-radius:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.navbar a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    opacity:.8;
+
+}
+
+.active{
+
+    border-bottom:3px solid #fff;
+
+    padding-bottom:5px;
+
+}
+
+/*==================================================
+                DROPDOWN GEMAS
+==================================================*/
+
+.dropdown{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+.dropbtn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+.dropdown-content{
+
+    display:none;
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    min-width:220px;
+
+    background:#022b68;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.dropdown-content a{
+
+    display:block;
+
+    padding:14px 18px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.dropdown-content a:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.dropdown:hover .dropdown-content{
+
+    display:block;
+
+}
+
+/*==================================================
+                ICONOS
+==================================================*/
+
+.icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    color:#fff;
+
+    font-size:20px;
+
+}
+
+.icons i{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.icons i:hover{
+
+    transform:scale(1.1);
+
+}
+
+/*==================================================
+            MENÚ DE IDIOMAS
+==================================================*/
+
+.dropdown-menu{
+
+    display:none;
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    min-width:160px;
+
+    background:#022b68;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:12px 15px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.dropdown-menu a:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.dropdown:hover .dropdown-menu{
+
+    display:block;
+
+}
+
+.bell-link{
+
+    color:#fff;
+
+    text-decoration:none;
+
+}

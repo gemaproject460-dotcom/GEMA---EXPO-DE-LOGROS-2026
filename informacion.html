@@ -1,0 +1,344 @@
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMA</title>
+
+    <!-- CONEXIÓN CSS -->
+    <link rel="stylesheet" href="informacion.css">   <!-- Unir con el css -->
+
+    <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+ <body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+       <header class="header">
+
+    <!-- LOGO -->
+    <div class="logo-box">
+
+        <img src="Imagenes/LOGO.png" alt="logo">
+
+        <div class="logo-texto">
+            <h1>GEMA</h1>
+            <p>
+                GLOBAL EMERGENCY <br>
+                MANAGEMENT ACCESS
+            </p>
+
+
+    
+
+        </div>
+
+    </div>
+
+   <!-- NAVBAR -->
+<nav class="navbar">
+
+    <a href="index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+    
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+
+        <button class="dropbtn" id="gemas">
+<span data-i18n="gemas">Gemas</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+
+        <div class="dropdown-content">
+            <div class="texto-dropdown"> 
+              <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+              <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+              <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+              <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+
+            </div>
+        </div>
+
+    </div>
+
+<a href="donaciones.html" id="datos-pais" data-i18n="pais">Donaciones</a>
+
+<a href="k9.html" id="K-9" > K-9 </a>
+
+
+    
+<!--FUNCIONES DE ICONOS DEL NAV-->
+<div class="icons">
+
+    <!-- Traducción -->
+    <div class="dropdown">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div class="dropdown-menu">
+         <a href="#" onclick="cambiarIdioma('es')">
+🇵🇦 Español
+</a>
+
+            <a href="#" onclick="cambiarIdioma('en')">
+🇺🇸 English
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- Notificaciones -->
+     <div class="icons"></div>
+
+    <a href="monitoreo.html" class="bell-link">
+    <i class="fa-regular fa-bell"></i>
+</a>
+</a>
+
+</div>
+
+        
+    </nav>
+
+</header>
+
+       
+ <section class="hero">
+<!-- Contenido del hero -->
+  <div class="hero-texto">
+  <h1>Stay informed, stay safe</h1>
+    <p>Knowledge saves lives — be prepared for any emergency.</p>
+  </div>
+
+  <div class="hero-slides">
+
+  <div class="slide active" style="background-image:
+linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+url('Imagenes/Primer imagen png.png')">
+</div>
+
+<div class="slide" style="background-image:
+linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+url('Imagenes/KIDS.png')">
+</div>
+
+<div class="slide" style="background-image:
+linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+url('Imagenes/GEMA KIDS.png')">
+</div>
+
+  </div>
+
+  
+  <!-- Controles -->
+  <button class="hero-prev" onclick="cambiarSlide(-1)">&#10094;</button>
+  <button class="hero-next" onclick="cambiarSlide(1)">&#10095;</button>
+
+  <!-- Puntos indicadores -->
+  <div class="hero-dots">
+    <span class="dot active" onclick="irASlide(0)"></span>
+    <span class="dot" onclick="irASlide(1)"></span>
+    <span class="dot" onclick="irASlide(2)"></span>
+  </div>
+
+  <!-- Botón pausa -->
+  <button class="hero-pause" onclick="togglePausa()">
+    <i class="fa-solid fa-pause" id="iconoPausa"></i>
+  </button>
+
+</section>
+
+
+<!-- ================= CONTENIDO PRINCIPAL ================= -->
+<main>
+
+  <!-- Sección: ¿Qué es GEMA? -->
+  <section>
+    <h2 data-i18n="queEsGema">¿QUÉ ES GEMA?</h2>
+
+    <p data-i18n="queEsGemaTexto1">
+Global Emergency Management Access (GEMA) es una plataforma interactiva creada para brindar información, orientación y herramientas educativas que ayuden a la población a saber cómo reaccionar ante situaciones de riesgo, desastres naturales y emergencias.
+</p>
+
+     <p data-i18n="queEsGemaTexto2">
+Nuestra plataforma está alineada y respaldada por instituciones como el Benemérito Cuerpo de Bomberos de la República de Panamá, Policía Nacional de Panamá, Sistema Nacional de Protección Civil y Sistema Único de Manejo de Emergencias, con el objetivo de promover la prevención, la preparación y la respuesta rápida ante cualquier eventualidad.
+</p>
+
+<p data-i18n="queEsGemaTexto3">
+Su objetivo es fortalecer la preparación ciudadana mediante recursos educativos,
+mapas de riesgo y protocolos oficiales.
+</p>
+
+<p data-i18n="queEsGemaTexto4">
+GEMA no solo está dirigida a adultos, sino también a niños y jóvenes, fomentando desde edades tempranas una cultura de prevención y educación en emergencias. GEMA incluye herramientas interactivas, mapas, capacitaciones, anuncios preventivos, guías prácticas y contenido educativo desarrollado junto a profesionales y especialistas. Nuestro propósito es crear una ciudadanía más preparada, informada y resiliente frente a los riesgos que afectan tanto a Panamá como al mundo.
+</p>
+
+  </section>
+
+  <!-- Sección: Recursos -->
+  <section>
+   <h2 data-i18n="recursos">RECURSOS</h2>
+   <p data-i18n="recursosTexto1">
+GEMA cuenta con recursos digitales y educativos diseñados para apoyar a la ciudadanía antes, durante y después de una emergencia.
+</p>
+
+   <p data-i18n="recursosTexto2">
+Entre los principales recursos que ofrece la plataforma se encuentran:
+</p>
+
+    <ul>
+     <li data-i18n="lista1">
+Información preventiva sobre inundaciones, terremotos, incendios, tormentas, deslizamientos y ataques de abejas africanizadas.
+</li>
+
+<li data-i18n="lista2">
+Mapas del clima en tiempo real
+</li>
+      <li data-i18n="lista3">
+Capacitaciones impartidas por profesionales y organismos especializados.
+</li>
+      <li data-i18n="lista4">
+Herramientas interactivas para niños, jóvenes y adultos.
+</li>
+<li data-i18n="lista5">
+Guías sobre primeros auxilios y actuación en emergencias.
+</li>
+  <li data-i18n="lista6">
+Espacios educativos sobre prevención y preparación ciudadana.
+</li>
+    <li data-i18n="lista7">
+Tienda Online
+</li>
+
+    </ul>
+
+    <p data-i18n="recursosTexto3">
+Además, GEMA busca fortalecer la comunicación entre la población y las instituciones de respuesta, permitiendo que las personas tengan acceso rápido a información confiable en momentos críticos, también promueve la educación comunitaria, ya que muchas emergencias empeoran debido a la desinformación o a la falta de preparación.
+</p>
+
+     </section>
+
+  <!-- Sección: Datos del país -->
+  <section>
+   <h2 data-i18n="datosPais">DATOS DEL PAÍS</h2>
+
+ <p data-i18n="datosPaisTexto1">
+En Panamá, las emergencias y desastres naturales forman parte de una realidad que afecta constantemente a muchas comunidades. Debido a su ubicación geográfica y clima tropical, el país es vulnerable a inundaciones, tormentas, deslizamientos de tierra, incendios forestales, fuertes lluvias y otros eventos naturales que ponen en riesgo la vida de las personas.
+</p>
+<p data-i18n="datosPaisTexto2">
+Uno de los problemas más frecuentes son las inundaciones. Estas no solo ocurren por las lluvias intensas, sino también por factores como construcciones en zonas vulnerables o cerca de ríos.
+</p>
+
+<p data-i18n="datosPaisTexto3">
+Muchas emergencias empeoran debido a la desinformación o porque las personas no saben cómo reaccionar correctamente. En algunos casos, la ciudadanía entra en pánico, toma decisiones equivocadas o desconoce las medidas básicas de seguridad.
+</p>
+
+<p data-i18n="datosPaisTexto4">
+Por esta razón, la educación preventiva es tan importante. Saber qué hacer antes, durante y después de una emergencia puede reducir riesgos, evitar accidentes y salvar vidas.
+</p>
+
+<p data-i18n="datosPaisTexto5">
+A nivel mundial, los desastres naturales causan miles de muertes y afectan a millones de personas cada año. El cambio climático también ha aumentado la intensidad de muchos fenómenos naturales, haciendo más frecuentes las lluvias extremas, olas de calor, incendios y tormentas.
+</p>
+
+<p data-i18n="datosPaisTexto6">
+Por esta razón, la prevención y la educación son fundamentales. Estar informado puede marcar la diferencia entre actuar correctamente o ponerse en peligro.
+</p>
+
+  </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- GEMA -->
+        <div class="footer-box">
+
+            <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+            <p data-i18n="gemaDescripcion">
+                Global Emergency Management Access.
+                Promoviendo la preparación, prevención y respuesta
+                ante emergencias para toda la comunidad.
+            </p>
+
+        </div>
+
+        <!-- Enlaces -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+            <a href="Index.html" data-i18n="inicio">Inicio</a>
+            <a href="informacion.html" data-i18n="informacion">Información</a>
+            <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+            <a href="mapa.html" target="_blank" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerContacto">Contacto</h3>
+
+            <p>Email: gemaproject460@gmail.com </p>
+            <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+            <p data-i18n="panama">Panamá</p>
+
+        </div>
+
+        <!-- Redes -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+            <div class="footer-redes">
+
+                <a href="#">
+  <a href="https://vm.tiktok.com/ZS9B37qb48kRf-WNU1D/" target="_blank">
+     <i class="fa-brands fa-tiktok"></i>
+ </a>
+ <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+     <i class="fab fa-instagram"></i>
+ </a>
+ <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
+ </a>
+ <a href="https://youtube.com/@gema_oficial460si=U6U8DBRm6MdWLAPy" target="_blank">
+     <i class="fa-brands fa-youtube"></i>
+ </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-i18n="footerDerechos">
+            © 2026 GEMA | Global Emergency Management Access.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+<script src="informacion.js"></script>
+
+</html>

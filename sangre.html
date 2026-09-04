@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONAR SANGRE</title>
+
+    <!-- CONEXIÓN CSS -->
+    <link rel="stylesheet" href="sangre.css">   <!-- Unir con el css -->
+
+        <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- LOGO -->
+            <div class="logo-box">
+
+                <img src="Imagenes/LOGO.png" alt="logo">
+
+                <div class="logo-texto">
+                    <h1>GEMA</h1>
+                    <p>GLOBAL EMERGENCY <br> MANAGEMENT ACCESS</p>
+                </div>
+
+            </div>
+
+           
+        <!-- NAVBAR -->
+<nav class="navbar">
+
+    <a href="index.html" class="active" id="inicio" data-i18n="inicio">Inicio</a>
+    
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+
+        <button class="dropbtn" id="gemas">
+<span data-i18n="gemas">Gemas</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+
+        <div class="dropdown-content">
+            <div class="texto-dropdown"> 
+              <a href="informacion.html" id="infoMenu" data-i18n="informacion">Información</a>
+              <a href="niños.html" id="ninosMenu" data-i18n="ninos">Niños</a>
+              <a href="capacitaciones.html" id="capacitacionesMenu" data-i18n="capacitaciones">Capacitaciones</a>
+              <a href="productos.html" id="productosMenu" data-i18n="productos">Productos</a>
+
+            </div>
+        </div>
+
+    </div>
+
+<a href="donaciones.html" id="datos-pais" data-i18n="pais">Donaciones</a>
+
+<a href="k9.html" id="K-9" > K-9 </a>
+
+
+    
+<!--FUNCIONES DE ICONOS DEL NAV-->
+<div class="icons">
+
+    <!-- Traducción -->
+    <div class="dropdown">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div class="dropdown-menu">
+         <a href="#" onclick="cambiarIdioma('es')">
+🇵🇦 Español
+</a>
+
+            <a href="#" onclick="cambiarIdioma('en')">
+🇺🇸 English
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- Notificaciones -->
+     <div class="icons"></div>
+
+    <a href="monitoreo.html" class="bell-link">
+    <i class="fa-regular fa-bell"></i>
+</a>
+</a>
+
+</div>
+
+        
+    </nav>
+
+   
+</header>
+ 
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+
+         <div class="hero-texto">
+            <h2 data-i18n="heroTitulo">
+                BANCOS DE SANGRE EN PANAMÁ
+            </h2>
+         <p data-i18n="heroTexto">
+        La donación de sangre salva vidas todos los días.
+           GEMA busca informar, educar y apoyar a la población
+        panameña sobre la importancia de los bancos de sangre.
+         </p>
+
+         </div>
+
+        </section>
+
+        <!-- ================= IMPORTANCIA ================= -->
+        <section class="card">
+
+           <h2 data-i18n="importancia">
+            IMPORTANCIA
+        </h2>
+            <img src="Imagenes/sangre.jpg" alt="Donación de sangre" class="img-card">
+
+            <p data-i18n="importanciaTexto1">
+                Los bancos de sangre son esenciales para el sistema de salud
+                en Panamá. Permiten almacenar y distribuir sangre segura
+                para atender emergencias, cirugías, accidentes y enfermedades.
+            </p>
+
+            <p data-i18n="importanciaTexto2">
+                Gracias a las donaciones voluntarias se pueden salvar miles
+                de vidas y mantener abastecidos los hospitales del país.
+            </p>
+
+        </section>
+
+        <!-- ================= A QUIÉN AYUDA ================= -->
+        <section class="card">
+
+            <h2 data-i18n="aQuienAyuda">
+                ¿A QUIÉN AYUDA?
+            </h2>
+
+            <ul>
+
+ <li data-i18n="ayuda1">Pacientes en cirugías de emergencia.</li>
+
+<li data-i18n="ayuda2">Víctimas de accidentes de tránsito.</li>
+
+<li data-i18n="ayuda3">Niños y adultos con cáncer.</li>
+
+<li data-i18n="ayuda4">Mujeres con complicaciones durante el parto.</li>
+
+<li data-i18n="ayuda5">Personas que necesitan transfusiones constantes.</li>
+
+<li data-i18n="ayuda6">Pacientes en tratamientos médicos especiales.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- ================= QUÉ ES ================= -->
+        <section class="card">
+
+            <h2 data-i18n="queEsBanco">
+                ¿QUÉ ES UN BANCO DE SANGRE?
+            </h2>
+ 
+            <p data-i18n="queEsTexto1">
+                Un banco de sangre es un centro médico encargado de recolectar,
+                analizar, almacenar y distribuir sangre para pacientes que
+                la necesiten.
+            </p>
+
+            <p data-i18n="queEsTexto2">
+                Toda sangre donada pasa por controles de seguridad para
+                garantizar transfusiones seguras y compatibles.
+            </p>
+            <img src="Imagenes/corazon.jfif" alt="Donación de sangre" class="img-c">
+
+        </section>
+
+        <!-- ================= GRUPOS SANGUÍNEOS ================= -->
+        <section class="card">
+
+            <h2  data-i18n="grupos">GRUPOS SANGUÍNEOS</h2>
+
+            <div class="grupos">
+
+                <div class="grupo">A+</div>
+                <div class="grupo">A-</div>
+
+                <div class="grupo">B+</div>
+                <div class="grupo">B-</div>
+
+                <div class="grupo">AB+</div>
+                <div class="grupo">AB-</div>
+
+                <div class="grupo">O+</div>
+                <div class="grupo">O-</div>
+
+            </div>
+
+            <p data-i18n="grupoTexto">
+                O- es considerado donador universal y AB+ receptor universal.
+            </p>
+
+        </section>
+
+        <!-- ================= URLS ================= -->
+        <section class="card">
+
+         <h2 data-i18n="informacionOficial">
+INFORMACIÓN OFICIAL EN PANAMÁ
+</h2>
+
+            <div class="links">
+
+                <a href="https://www.minsa.gob.pa" target="_blank" data-i18n="minsa">
+                    Ministerio de Salud de Panamá
+                </a>
+
+                <a href="https://w3.css.gob.pa" target="_blank" data-i18n="css">
+                    Caja de Seguro Social
+                </a>
+<a href="https://www.donasangre.org/bancos-de-sangre.html" target="_blank" data-i18n="donaSangre">
+                    Dona Sangre
+                </a>
+
+                <a href="https://www.donasangre.org/bancos-de-sangre.html" target="_blank"  data-i18n="bancosSangre">
+                    Bancos de Sangre
+                </a>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+   <!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- GEMA -->
+        <div class="footer-box">
+
+            <h3 data-i18n="gemaTitulo">GEMA</h3>
+
+            <p data-i18n="gemaDescripcion">
+                Global Emergency Management Access.
+                Promoviendo la preparación, prevención y respuesta
+                ante emergencias para toda la comunidad.
+            </p>
+
+        </div>
+
+        <!-- Enlaces -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerEnlaces">Enlaces</h3>
+
+            <a href="Index.html" data-i18n="inicio">Inicio</a>
+            <a href="informacion.html" data-i18n="informacion">Información</a>
+            <a href="capacitaciones.html" data-i18n="capacitaciones">Capacitaciones</a>
+            <a href="mapa.html" target="_blank" data-i18n="mapaInteractivo">Mapa Interactivo</a>
+
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerContacto">Contacto</h3>
+
+            <p>Email: gemaproject460@gmail.com </p>
+            <p data-i18n="telefono">Teléfono: +507 6000-0000</p>
+            <p data-i18n="panama">Panamá</p>
+
+        </div>
+
+        <!-- Redes -->
+
+        <div class="footer-box">
+
+            <h3 data-i18n="footerSiguenos">Síguenos</h3>
+
+            <div class="footer-redes">
+
+                <a href="https://vm.tiktok.com/ZS9B37qb48kRf-WNU1D/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="https://www.instagram.com/g.e.m.aofficial?igsi=MXFkcjlnNGMwanE0NA==" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://whatsapp.com/channel/0029Vb8Daw42kNFn3OM9pp2z" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://youtube.com/@gema_oficial460si=U6U8DBRm6MdWLAPy" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-i18n="footerDerechos">
+            © 2026 GEMA | Global Emergency Management Access.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="sangre.js"></script>
+
+</body>
+</html>

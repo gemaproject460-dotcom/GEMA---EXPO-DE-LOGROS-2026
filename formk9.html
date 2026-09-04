@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagenes/LOGO-removebg.png" type="image/x-icon">
+
+    <title data-i18n="k9_titulo_pagina">GEMA K9 | Registro</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="formk9.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="k9-header">
+
+        <a href="k9.html" class="btn-regresar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span data-i18n="volver">Volver</span>
+        </a>
+
+        <div class="k9-logo">
+            <span>GEMA</span>
+            <strong>K9</strong>
+        </div>
+
+        <!-- Botón de idioma -->
+        <button class="btn-idioma" id="idiomaBtn">
+            <i class="fa-solid fa-globe"></i>
+            <span id="idiomaTexto">EN</span>
+        </button>
+
+    </header>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main class="k9-container">
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="k9-intro">
+
+            <div class="k9-icon">
+                <i class="fa-solid fa-dog"></i>
+            </div>
+
+            <h1 data-i18n="k9_titulo">
+                ÚNETE A GEMA K9
+            </h1>
+
+            <p data-i18n="k9_subtitulo">
+                Forma parte de nuestra comunidad de rescate y
+                contribuye a fortalecer la respuesta ante emergencias.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================
+             FORMULARIO
+        ========================================== -->
+
+        <form id="k9Form" class="k9-form">
+
+            <!-- =====================================
+                 DATOS PERSONALES
+            ====================================== -->
+
+            <section class="form-section">
+
+                <div class="section-title">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <div>
+                        <h2 data-i18n="datos_personales">
+                            Datos personales
+                        </h2>
+
+                        <p data-i18n="datos_personales_desc">
+                            Información básica del participante.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <!-- Nombre -->
+
+                    <div class="form-group full">
+
+                        <label for="nombre" data-i18n="nombre">
+                            Nombre completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            data-i18n-placeholder="nombre_placeholder"
+                            placeholder="Ingresa tu nombre completo"
+                            required>
+
+                    </div>
+
+
+                    <!-- Correo -->
+
+                    <div class="form-group">
+
+                        <label for="correo" data-i18n="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            data-i18n-placeholder="correo_placeholder"
+                            placeholder="ejemplo@correo.com"
+                            required>
+
+                    </div>
+
+
+                    <!-- Teléfono -->
+
+                    <div class="form-group">
+
+                        <label for="telefono" data-i18n="telefono">
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            data-i18n-placeholder="telefono_placeholder"
+                            placeholder="Ingresa tu número"
+                            required>
+
+                    </div>
+
+
+                    <!-- Provincia -->
+
+                    <div class="form-group">
+
+                        <label for="provincia" data-i18n="provincia">
+                            Provincia
+                        </label>
+
+                        <select id="provincia" name="provincia" required>
+
+                            <option value=""
+                                data-i18n="seleccionar_provincia">
+                                Selecciona tu provincia
+                            </option>
+
+                            <option value="Bocas del Toro">
+                                Bocas del Toro
+                            </option>
+
+                            <option value="Coclé">
+                                Coclé
+                            </option>
+
+                            <option value="Colón">
+                                Colón
+                            </option>
+
+                            <option value="Chiriquí">
+                                Chiriquí
+                            </option>
+
+                            <option value="Darién">
+                                Darién
+                            </option>
+
+                            <option value="Herrera">
+                                Herrera
+                            </option>
+
+                            <option value="Los Santos">
+                                Los Santos
+                            </option>
+
+                            <option value="Panamá">
+                                Panamá
+                            </option>
+
+                            <option value="Panamá Oeste">
+                                Panamá Oeste
+                            </option>
+
+                            <option value="Veraguas">
+                                Veraguas
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Edad -->
+
+                    <div class="form-group">
+
+                        <label for="edad" data-i18n="edad">
+                            Edad
+                        </label>
+
+                        <input
+                            type="number"
+                            id="edad"
+                            name="edad"
+                            min="13"
+                            max="100"
+                            placeholder="Edad"
+                            required>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================
+                 PARTICIPACIÓN
+            ====================================== -->
+
+            <section class="form-section">
+
+                <div class="section-title">
+
+                    <i class="fa-solid fa-people-group"></i>
+
+                    <div>
+
+                        <h2 data-i18n="participacion">
+                            ¿Cómo te gustaría participar?
+                        </h2>
+
+                        <p data-i18n="participacion_desc">
+                            Selecciona el área que más te interesa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="participation-grid">
+
+                    <label class="participation-card">
+
+                        <input
+                            type="radio"
+                            name="participacion"
+                            value="guia">
+
+                        <div>
+
+                            <i class="fa-solid fa-dog"></i>
+
+                            <h3 data-i18n="guia_k9">
+                                Guía K9
+                            </h3>
+
+                            <p data-i18n="guia_k9_desc">
+                                Formación y acompañamiento de unidades K9.
+                            </p>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="participation-card">
+
+                        <input
+                            type="radio"
+                            name="participacion"
+                            value="voluntario">
+
+                        <div>
+
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+
+                            <h3 data-i18n="voluntario">
+                                Voluntario
+                            </h3>
+
+                            <p data-i18n="voluntario_desc">
+                                Apoyo en actividades y operaciones.
+                            </p>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="participation-card">
+
+                        <input
+                            type="radio"
+                            name="participacion"
+                            value="emergencias">
+
+                        <div>
+
+                            <i class="fa-solid fa-truck-medical"></i>
+
+                            <h3 data-i18n="apoyo_emergencias">
+                                Apoyo en emergencias
+                            </h3>
+
+                            <p data-i18n="apoyo_emergencias_desc">
+                                Apoyo a equipos durante situaciones de emergencia.
+                            </p>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="participation-card">
+
+                        <input
+                            type="radio"
+                            name="participacion"
+                            value="entrenamiento">
+
+                        <div>
+
+                            <i class="fa-solid fa-graduation-cap"></i>
+
+                            <h3 data-i18n="entrenamiento">
+                                Entrenamiento
+                            </h3>
+
+                            <p data-i18n="entrenamiento_desc">
+                                Información sobre formación K9.
+                            </p>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================
+                 INFORMACIÓN DEL PERRO
+            ====================================== -->
+
+            <section class="form-section">
+
+                <div class="section-title">
+
+                    <i class="fa-solid fa-paw"></i>
+
+                    <div>
+
+                        <h2 data-i18n="informacion_perro">
+                            Información del perro
+                        </h2>
+
+                        <p data-i18n="informacion_perro_desc">
+                            Completa esta sección si ya cuentas con un perro.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="nombrePerro" data-i18n="nombre_perro">
+                            Nombre del perro
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombrePerro"
+                            name="nombrePerro"
+                            data-i18n-placeholder="nombre_perro_placeholder"
+                            placeholder="Nombre del perro">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="raza" data-i18n="raza">
+                            Raza
+                        </label>
+
+                        <input
+                            type="text"
+                            id="raza"
+                            name="raza"
+                            data-i18n-placeholder="raza_placeholder"
+                            placeholder="Ej. Pastor Alemán">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="edadPerro" data-i18n="edad_perro">
+                            Edad del perro
+                        </label>
+
+                        <input
+                            type="number"
+                            id="edadPerro"
+                            name="edadPerro"
+                            min="0"
+                            max="30"
+                            placeholder="Edad">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="entrenamientoPerro"
+                            data-i18n="entrenamiento_perro">
+
+                            ¿Tiene entrenamiento previo?
+
+                        </label>
+
+                        <select id="entrenamientoPerro"
+                            name="entrenamientoPerro">
+
+                            <option value=""
+                                data-i18n="seleccionar_opcion">
+
+                                Selecciona una opción
+
+                            </option>
+
+                            <option value="si"
+                                data-i18n="si">
+
+                                Sí
+
+                            </option>
+
+                            <option value="no"
+                                data-i18n="no">
+
+                                No
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================
+                 EXPERIENCIA
+            ====================================== -->
+
+            <section class="form-section">
+
+                <div class="section-title">
+
+                    <i class="fa-solid fa-clipboard-list"></i>
+
+                    <div>
+
+                        <h2 data-i18n="experiencia">
+                            Experiencia
+                        </h2>
+
+                        <p data-i18n="experiencia_desc">
+                            Cuéntanos sobre tu experiencia relacionada.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="experiencia"
+                        data-i18n="experiencia_label">
+
+                        Experiencia previa
+
+                    </label>
+
+                    <textarea
+                        id="experiencia"
+                        name="experiencia"
+                        rows="5"
+                        data-i18n-placeholder="experiencia_placeholder"
+                        placeholder="Cuéntanos brevemente sobre tu experiencia...">
+                    </textarea>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================
+                 MENSAJE
+            ====================================== -->
+
+            <section class="form-section">
+
+                <div class="form-group">
+
+                    <label for="comentarios"
+                        data-i18n="comentarios">
+
+                        Comentarios adicionales
+
+                    </label>
+
+                    <textarea
+                        id="comentarios"
+                        name="comentarios"
+                        rows="4"
+                        data-i18n-placeholder="comentarios_placeholder"
+                        placeholder="¿Hay algo más que quieras contarnos?">
+                    </textarea>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================
+                 BOTÓN
+            ====================================== -->
+
+            <div class="form-actions">
+
+                <button
+                    type="submit"
+                    class="btn-enviar">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    <span data-i18n="enviar">
+                        ENVIAR SOLICITUD
+                    </span>
+
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- =========================================
+             MENSAJE DE CONFIRMACIÓN
+        ========================================== -->
+
+        <div
+            id="mensajeExito"
+            class="mensaje-exito"
+            hidden>
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h2 data-i18n="exito_titulo">
+                ¡Solicitud enviada!
+            </h2>
+
+            <p data-i18n="exito_texto">
+                Gracias por tu interés en formar parte de GEMA K9.
+                Nos pondremos en contacto contigo.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="formk9.js"></script>
+
+</body>
+
+</html>
