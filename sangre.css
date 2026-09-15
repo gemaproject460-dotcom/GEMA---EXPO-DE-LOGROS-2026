@@ -682,7 +682,9 @@ body{
 
     transition:.3s;
     
-    text-decoration: none;
+    text-decoration: none !important;
+
+    padding-left: 0 !important;
 
 }
 
@@ -691,6 +693,10 @@ body{
     background:#0a5ca8;
 
     transform:translateY(-5px);
+    
+    text-decoration: none !important;
+
+    padding-left: 0 !important;
 
 }
 
