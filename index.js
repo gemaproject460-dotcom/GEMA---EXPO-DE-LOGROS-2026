@@ -9,7 +9,7 @@ const textos = {
         capacitaciones: "Capacitaciones",
         productos: "Productos",
 
-        pais: "Donaciones",
+        donaciones: "Donaciones",
 
         heroTitulo: "ESTAMOS AQUÍ <br> PARA AYUDAR",
 
@@ -95,7 +95,7 @@ const textos = {
         capacitaciones: "Training",
         productos: "Products",
 
-        pais: "Donations",
+     donaciones: "Donations",
 
         heroTitulo: "WE ARE HERE <br> TO HELP",
 
