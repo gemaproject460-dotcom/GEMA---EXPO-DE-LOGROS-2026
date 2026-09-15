@@ -230,6 +230,7 @@ body{
   overflow: hidden;
   display: flex;
   align-items: center;
+  border-radius: 0;
 }
 
 
